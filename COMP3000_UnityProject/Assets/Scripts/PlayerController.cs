@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
         float horInput = Input.GetAxis("Horizontal");
         float vertInput = Input.GetAxis("Vertical");
         Vector2 inputVector = new Vector2(horInput, vertInput);
+        setWalkAnim(inputVector);
         Vector2 movement = inputVector * moveSpeed;
         Vector2 newPos = currentPos + movement * Time.fixedDeltaTime;
         playerRB.MovePosition(newPos);
@@ -42,12 +43,22 @@ public class PlayerController : MonoBehaviour
 
     private void setWalkAnim(Vector2 newInputVector)
     {
+        //walk vs idle
+        if(newInputVector.x != 0 || newInputVector.y != 0) 
+        {
+			playerAnim.SetBool("walking", true);
+		}
+        else
+        {
+			playerAnim.SetBool("walking", false);
+		}
+
         //set fw or bw anim
-        if(newInputVector.y > 0)
+        if(newInputVector.y <= 0)
         {
             playerAnim.SetBool("facingFront", true);
         }
-        else if(newInputVector.y < 0)
+        else if(newInputVector.y > 0)
         {
 			playerAnim.SetBool("facingFront", false);
 		}
@@ -55,11 +66,11 @@ public class PlayerController : MonoBehaviour
         //flip if needed
         if(newInputVector.x > 0)
         {
-            playerSprite.flipY = false;
+            playerSprite.flipX = false;
         }
         else if(newInputVector.x < 0)
         {
-            playerSprite.flipY = true;
+            playerSprite.flipX = true;
         }
 
     }
