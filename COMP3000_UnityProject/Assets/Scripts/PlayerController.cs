@@ -10,12 +10,15 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 1f;
     public Rigidbody2D playerRB;
     public Vector2 currentPos;
-
+    public Animator playerAnim;
+    public SpriteRenderer playerSprite; 
     // Start is called before the first frame update
     void Start()
     {
         playerRB= GetComponent<Rigidbody2D>();
         currentPos = GetComponent<Transform>().position;
+        playerAnim = GetComponent<Animator>();
+        playerSprite = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -36,4 +39,28 @@ public class PlayerController : MonoBehaviour
         playerRB.MovePosition(newPos);
 
 	}
+
+    private void setWalkAnim(Vector2 newInputVector)
+    {
+        //set fw or bw anim
+        if(newInputVector.y > 0)
+        {
+            playerAnim.SetBool("facingFront", true);
+        }
+        else if(newInputVector.y < 0)
+        {
+			playerAnim.SetBool("facingFront", false);
+		}
+
+        //flip if needed
+        if(newInputVector.x > 0)
+        {
+            playerSprite.flipY = false;
+        }
+        else if(newInputVector.x < 0)
+        {
+            playerSprite.flipY = true;
+        }
+
+    }
 }
