@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
         float horInput = Input.GetAxis("Horizontal");
         float vertInput = Input.GetAxis("Vertical");
         Vector2 inputVector = new Vector2(horInput, vertInput);
-        setWalkAnim(inputVector);
+        if(playerAnim) setWalkAnim(inputVector);
         Vector2 movement = inputVector * moveSpeed;
         Vector2 newPos = currentPos + movement * Time.fixedDeltaTime;
         playerRB.MovePosition(newPos);
