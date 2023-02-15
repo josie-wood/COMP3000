@@ -1,5 +1,5 @@
 ﻿title: Start
-position: -218,-108
+position: -284,-103
 ---
 *knock knock*
 You stand at the door, awaiting a response. 
@@ -22,18 +22,96 @@ You stand at the door, awaiting a response.
  ...
  After a few moments, you hear a grunt, and slow footsteps approach the door.
 
- jump ChatIntro
+ <<jump ChatIntro>>
 ===
 
 title: ChatIntro
-position: 173,88
+position: -35,-104
 ---
+...
 You stand in the doorway.
 The pensioner looks at you, expectantly. 
+"Well? What do you want? I'm very busy you know!"
+"I just moved in next door"
+"...So?"
+"I guess...
+I just wanted to say hi?
+so.. hi!"
+They don't look too impressed. 
+Okay, time to try some smalltalk.
+<<jump Chat>>
 ===
 
 title: Chat
-position: 322,-21
+position: 207,-104
+---
+-> look at the person
+    <<jump ChatLookPerson>>
+-> look around the room
+    <<jump ChatLookRoom>>    
+-> "Do you need help with anything?"
+    <<jump ChatNeedHelp>>    
+
+===
+
+title: ChatLookPerson
+position: 488,-341
+---
+Upon closer inspection, you can see their irritation doesn't meet their eyes. 
+Beneath their frown they seem more... nervous than cross. 
+Their eyes keep flitting back to the window,
+their expression mellowing slightly everytime a new bird appears at the feeder. 
+You think you almost see a smile in the corners of their mouth,
+but as they catch you looking it's replaced by the frown.
+"it's not nice to stare, kid!"
+"...Sorry"
+
+<<jump Chat>>
+===
+title: ChatLookRoom
+position: 586,-242
+---
+
+You look past your host to the inside of the old cottage.
+The room is mostly barren, and covered in a layer of dust,
+And you can't help but notice that the only used area of the room,
+seems to be the grand armchair that sits beside the bay window. 
+The walls are empty
+apart from one old painting in a faded golden frame
+proudly displayed above the mantle. 
+"I like that... landscape painting, you have there"
+They look almost bashful that you pointed it out, and don't meet your eyes.
+"Oh that, yes, I've... 
+had that for years.
+it's rather old now."
+<<jump Chat>>
+===
+title: ChatNeedHelp
+position: 593,-104
+---
+
+"What do you think I am!
+Some helpless old bag?
+I SERIOUSLY DOUBT there's anything much YOU can do for me"
+It seems like you hit a nerve there. 
+Oops.
+<<jump Chat>>
+===
+
+title: ChatBirds
+position: 595,42
+---
+
+===
+
+title: ChatPaint
+position: 518,171
+---
+
+===
+
+title: End
+position: 223,313
 ---
 
 ===
