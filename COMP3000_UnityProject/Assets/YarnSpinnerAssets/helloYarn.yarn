@@ -1,11 +1,39 @@
 ﻿title: Start
+position: -218,-108
 ---
-Wow!
-My first ever Yarn script in Unity!
+*knock knock*
+You stand at the door, awaiting a response. 
 
--> Gosh!
--> Incredible!
--> I'm amazed!
+-> *knock again*
+    *KNOCK KNOCK*
+    A voice rattles out from behind the door.
+    "I don't want whatever you're selling! Go away!"
+    "I'm not selling anything! I just want to introduce myself?"
+  
+-> *look through the window*
+    You peak your head around the frame of the dusty window...
+    And lock eyes with the dishelved figure sat in the armchair.
+    "AAGH!"
+    "AAAGH!"
+    ...
+    ...
+    "Can you come to the door please?"
+ 
+ ...
+ After a few moments, you hear a grunt, and slow footsteps approach the door.
 
-Anyway, time to get writing!
+ jump ChatIntro
+===
+
+title: ChatIntro
+position: 173,88
+---
+You stand in the doorway.
+The pensioner looks at you, expectantly. 
+===
+
+title: Chat
+position: 322,-21
+---
+
 ===
