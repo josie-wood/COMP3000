@@ -27,7 +27,7 @@ public class Interactable : MonoBehaviour
 		Debug.Log("blahblah");
 		if (withinRange)
 		{
-			if (Input.GetKeyDown("space"))
+			if (Input.GetKeyUp("space"))
 			{
 				Debug.Log("interactionKeyPressed " + interactKey);
 
@@ -73,5 +73,10 @@ public class Interactable : MonoBehaviour
 			uiPrompt.SetActive(false);
 		}
 		
+	}
+
+	public void updateStartNode(string newNode)
+	{
+		startNode= newNode;
 	}
 }
