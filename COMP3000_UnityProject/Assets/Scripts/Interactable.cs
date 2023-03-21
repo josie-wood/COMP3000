@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Yarn.Unity;
 
 public class Interactable : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class Interactable : MonoBehaviour
     public GameObject uiPrompt;
 	public string interactKey;
 	private bool withinRange;
+	public DialogueRunner dialogueRunner;
+	public string startNode;
 
 	private void Start()
 	{
@@ -22,9 +25,16 @@ public class Interactable : MonoBehaviour
 	private void Update()
 	{
 		Debug.Log("blahblah");
-		if (Input.GetKeyDown("space"))
+		if (withinRange)
 		{
-			Debug.Log("interactionKeyPressed " + interactKey);
+			if (Input.GetKeyDown("space"))
+			{
+				Debug.Log("interactionKeyPressed " + interactKey);
+
+				// play node
+				Debug.Log("trying to start the dialogue now");
+				dialogueRunner.StartDialogue(startNode);
+			}
 		}
 	}
 
@@ -44,11 +54,12 @@ public class Interactable : MonoBehaviour
 		//set bool
 		withinRange= true;
 
-       //show prompt
-	   if (uiPrompt != null)
-       {
-            uiPrompt.SetActive(true);
-       }
+		//show prompt
+		if (uiPrompt != null)
+		{
+			uiPrompt.SetActive(true);
+		}
+
     }
 
 	private void outInteractionRange()
