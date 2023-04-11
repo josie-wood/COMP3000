@@ -14,6 +14,12 @@ public class Square : MonoBehaviour
 
     public int State { get; set; }
 
+    public Square(Vector3Int squarePosition, MarchingManager marchingMan)
+    {
+        squareTilePosition= squarePosition;
+        marchingManager= marchingMan;
+    }
+
     public void OnVertexUpdated()
     {
         // State = make vertex map to number from 0-15 

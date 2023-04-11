@@ -24,7 +24,7 @@ public class Interactable : MonoBehaviour
 	}
 	private void Update()
 	{
-		Debug.Log("blahblah");
+		//Debug.Log("blahblah");
 		if (withinRange)
 		{
 			if (Input.GetKeyUp("space"))
