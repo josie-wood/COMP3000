@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Vertex
 {
+	public List<Square> Squares { get; set; }
 	private bool isOn;
 	public bool IsOn { 
 		get 
@@ -21,5 +22,4 @@ public class Vertex
 		}
 	}
 
-	public List<Square> Squares { get; set; }
 }
