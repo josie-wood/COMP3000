@@ -6,15 +6,21 @@ using UnityEngine.Tilemaps;
 
 public class MarchingManager : MonoBehaviour
 {
+	[SerializeField]
 	public List<TileBase> Tiles { get; set; }
 	public Tilemap tilemap;
 
+	[SerializeField]
 	public BoundsInt tilemapBounds;
 
+	[SerializeField]
 	public Vertex[,] verticesArray;
+	[SerializeField]
 	public Square[,] squaresArray;
 
+	[SerializeField]
 	public int xSize;
+	[SerializeField]
 	public int ySize;
 
 	private void Start()
@@ -53,8 +59,6 @@ public class MarchingManager : MonoBehaviour
 				{
 					//create new square
 					Square newSquare = new Square(currentPos, this);
-					//	NOTE ----
-					//	constructor doesnt make square newsqaure is still null;
 
 					//add to 2darray in size pos
 					squaresArray[x, y] = newSquare;
@@ -88,7 +92,20 @@ public class MarchingManager : MonoBehaviour
 				{
 					//generate current vertex from square pos and iteration
 					//Vertex currentVertex = verticesArray[currentSquare.squareTilePosition.x + (i % 2), currentSquare.squareTilePosition.y + (i % 2)];
-					Vertex currentVertex = verticesArray[x + (i % 2), y + (i % 2)];
+					int xOffset = i % 2;
+					int yoffset = 0;
+					if(i >= 2)
+					{
+						yoffset = 1;
+					}
+
+					Vertex currentVertex = verticesArray[x + xOffset, y + yoffset];
+
+					if (currentVertex == null)
+					{
+						currentVertex = new Vertex();
+						verticesArray[x + xOffset, y + yoffset] = currentVertex;
+					}
 
 					//add vertex to the current squares vertex list
 					currentSquare.Vertices.Add(currentVertex);

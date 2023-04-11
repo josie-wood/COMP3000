@@ -5,9 +5,10 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 using UnityEngine.UIElements;
 
-public class Square : MonoBehaviour
+[System.Serializable]
+public class Square
 {
-    public List<Vertex> Vertices { get; set; }
+    public List<Vertex> Vertices { get; set; } = new List<Vertex>();
     public List<int> conversion = new List<int> { 8, 4, 2, 1 };
     public MarchingManager marchingManager;
     public Vector3Int squareTilePosition;
