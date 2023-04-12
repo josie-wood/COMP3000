@@ -42,7 +42,9 @@ public class Square
     public void updateTileSprite(int newMarchingTileRef)
     {
         //Takes the number of the new marching sqaure image to be used, updates the tile sprite 
-        TileBase newTile = marchingManager.Tiles[newMarchingTileRef];
-        marchingManager.tilemap.SetTile(squareTilePosition, newTile);
+
+        //TileBase newTile = marchingManager.Tiles[newMarchingTileRef];
+        //marchingManager.tilemap.SetTile(squareTilePosition, newTile);
+        marchingManager.tilemap.SetTile(squareTilePosition, marchingManager.colTile);
     }    
 }

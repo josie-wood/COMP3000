@@ -10,6 +10,9 @@ public class MarchingManager : MonoBehaviour
 {
 	[SerializeField]
 	public List<TileBase> Tiles { get; set; }
+
+	public TileBase greyTile;
+	public TileBase colTile;
 	public Tilemap tilemap;
 
 	[SerializeField]
@@ -50,18 +53,27 @@ public class MarchingManager : MonoBehaviour
 		// get player position in map
 		playerPosition = player.transform.position;
 
-		translatePlayerPosToTilemap(playerPosition);
-		// translate to the 2d array
-		// find closest vertex
+		//transalte to vertex in tilemap
+		Vector3Int vertexPos = translatePlayerPosToTilemap(playerPosition);
+
 		// turn vertex on
+		turnVertexOn(vertexPos);
+	}
+
+	private void turnVertexOn(Vector3Int currentVertexPos)
+	{
+		//get vertex from array
+		Vertex currentVertex = verticesArray[currentVertexPos.x, currentVertexPos.y];
+
+		currentVertex.IsOn= true;
 	}
 
 	private Vector3Int translatePlayerPosToTilemap(Vector3 playerWorldPosition)
 	{
+		//returns position of current vertex pos in tilemap
+
 		Vector3Int playerTilemapPosition;
 
-
-		
 
 		if (forestXSize/forestYSize != tilemapXSize/tilemapYSize)
 		{
