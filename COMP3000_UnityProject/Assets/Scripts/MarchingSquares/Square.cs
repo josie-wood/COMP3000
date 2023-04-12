@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -27,7 +28,7 @@ public class Square
 
         int MarchingSquareRef = 0;
 
-        for(int i = 0; i >= Vertices.Count; i++)
+        for(int i = 0; i < Vertices.Count; i++)
         {
             if (Vertices[i].IsOn)
             {
@@ -35,16 +36,18 @@ public class Square
 			}
 		}
 
+        Debug.Log("Updating square at " + squareTilePosition + " with MS num " + MarchingSquareRef);
         //update the sprite on the tile
         updateTileSprite(MarchingSquareRef);
+
     }
 
     public void updateTileSprite(int newMarchingTileRef)
     {
         //Takes the number of the new marching sqaure image to be used, updates the tile sprite 
 
-        //TileBase newTile = marchingManager.Tiles[newMarchingTileRef];
-        //marchingManager.tilemap.SetTile(squareTilePosition, newTile);
-        marchingManager.tilemap.SetTile(squareTilePosition, marchingManager.colTile);
+        TileBase newTile = marchingManager.Tiles[newMarchingTileRef];
+        marchingManager.tilemap.SetTile(squareTilePosition, newTile);
+        //marchingManager.tilemap.SetTile(squareTilePosition, marchingManager.colTile);
     }    
 }

@@ -9,10 +9,8 @@ using UnityEngine.Tilemaps;
 public class MarchingManager : MonoBehaviour
 {
 	[SerializeField]
-	public List<TileBase> Tiles { get; set; }
+	public List<TileBase> Tiles;
 
-	public TileBase greyTile;
-	public TileBase colTile;
 	public Tilemap tilemap;
 
 	[SerializeField]
@@ -65,7 +63,11 @@ public class MarchingManager : MonoBehaviour
 		//get vertex from array
 		Vertex currentVertex = verticesArray[currentVertexPos.x, currentVertexPos.y];
 
-		currentVertex.IsOn= true;
+		if(!currentVertex.IsOn)
+		{
+			currentVertex.IsOn = true;
+		}
+		
 	}
 
 	private Vector3Int translatePlayerPosToTilemap(Vector3 playerWorldPosition)
@@ -93,7 +95,7 @@ public class MarchingManager : MonoBehaviour
 		}
 		// tilemapBounds bounds of tilemap
 
-		Debug.Log("Player world pos is " + playerWorldPosition + " and tilemap pos is " + playerTilemapPosition);
+		//Debug.Log("Player world pos is " + playerWorldPosition + " and tilemap pos is " + playerTilemapPosition);
 		return playerTilemapPosition;
 		
 	}
