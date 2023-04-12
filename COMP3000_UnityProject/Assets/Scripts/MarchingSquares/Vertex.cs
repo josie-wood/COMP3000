@@ -7,6 +7,13 @@ public class Vertex
 {
 	public List<Square> Squares { get; set; } = new List<Square>();
 	private bool isOn;
+	public Vector3Int VertexPosition;
+
+	public Vertex(Vector3Int vertexPosition)
+	{
+		VertexPosition = vertexPosition;
+	}
+
 	public bool IsOn { 
 		get 
 		{

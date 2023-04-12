@@ -91,9 +91,12 @@ public class MarchingManager : MonoBehaviour
 				for (int i = 0; i < 4; i++)
 				{
 					//generate current vertex from square pos and iteration
-					//Vertex currentVertex = verticesArray[currentSquare.squareTilePosition.x + (i % 2), currentSquare.squareTilePosition.y + (i % 2)];
+					
 					int xOffset = i % 2;
 					int yoffset = 0;
+
+					Vector3Int vertexPosition = new Vector3Int(x+xOffset, y+yoffset, 0);
+
 					if(i >= 2)
 					{
 						yoffset = 1;
@@ -103,7 +106,7 @@ public class MarchingManager : MonoBehaviour
 
 					if (currentVertex == null)
 					{
-						currentVertex = new Vertex();
+						currentVertex = new Vertex(vertexPosition);
 						verticesArray[x + xOffset, y + yoffset] = currentVertex;
 					}
 
@@ -113,14 +116,11 @@ public class MarchingManager : MonoBehaviour
 					//add the square to the vertex's square list
 					currentVertex.Squares.Add(currentSquare);
 
-					Debug.Log("Current square at position " + currentSquare.squareTilePosition.x + " , " + currentSquare.squareTilePosition.y + " has added vertex number "
-					+ i + " with value of " + currentSquare.Vertices[i].ToString());
-
 				}
-				Debug.Log("Current square at position " + currentSquare.squareTilePosition.x + " , " + currentSquare.squareTilePosition.y + " has "
-					+ currentSquare.Vertices.Count + " vertices, first is: " + currentSquare.Vertices[0].ToString());
+						
 			}
 		}
+
 	}
 
 }
