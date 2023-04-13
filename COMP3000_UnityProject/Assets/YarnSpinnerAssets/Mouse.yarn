@@ -1,19 +1,139 @@
 ﻿title: IntroduceMouse
 tags:
 ---
-hello!
-i am a lil mouse 
-yoo hooo
+//first time introduction
 
--> hi
--> yo
-
-<<advanceEntryNode talkAgain>>
+//<<advanceEntryNode talkAgain>>
 ===
 
 title: talkAgain
+---
+//brief nicities to replace introduction when you speak again before diving into discussion
+
+<<jump discussion>>
+===
+
+title: discussion
 tags:
 ---
-...didn't we do this already?
-...
+// first level of choices 
+
+-> Look at them  
+    <<jump lookAtThem>>
+->Look around the room
+    <<jump lookAtRoom>>
+
+//if LearnDepression
+-> What do you like to do?
+
+//if LearnHiking
+-> Would you like to go for a walk?
 ===
+
+title: lookAtThem
+---
+//description of them, body language, vibes - sleepy, unmotivated, stuck in a rut
+
+->Come back another time?
+->Ask how they're doing
+
+===
+
+title: comeBackAgain
+---
+
+//discuss dinner, cooking habits, once foraged, now boring, low effort, survival
+
+<<jump discussion>>
+
+===
+
+title: askHowDoing
+---
+//ask them how they're getting on
+//learn about their depression
+//set LEARNT info: depression
+
+<<jump discussion>>
+===
+
+title: lookAtRoom
+---
+//describe their house
+
+-> Ask about photos and old boots
+-> Ask about curtains
+===
+
+title: askPhotos
+---
+//discuss photos
+//used to go out and about a lot, travelled, explored
+//been stuck in, lost touch, trapped
+
+//set LEARNT info: hiking
+<<jump discussion>>
+===
+
+title: askCurtains
+---
+// more info about depression
+//if not yet - then set LEARNT info: depression
+//provide character insight
+
+<<jump discussion>>
+===
+
+title: askWhatMakesHappy
+---
+// option only available if know about depression
+
+//used to walk and forage, now stuck insight, no motivation
+//set LEARNT info: forage
+
+<<jump discussion>>
+===
+
+title: askToWalk
+---
+//------STEP ONE-----------------------
+//if havent foraged or planned yet
+<<jump askToWalkONE>>
+
+//------STEP TWO----------------------
+//once they've foraged
+<<jump askToWalkTWO>>
+
+//-----STEP THREE---------------------
+// once they've been to woods
+<<jump askToWalkTHREE>>
+===
+
+title: askToWalkONE
+---
+// they dimiss, too tired, need to be reminded, inspired
+//if !LearntForage = need to find a grounding acrivity outside to remind them what they 
+//used to enjot
+
+//if LearntForage = need to bring foraged goods!
+// set TASK: forage
+===
+
+title: askToWalkTWO
+---
+
+//they're reminded how much they enjoyed it!
+// you need to plan the route though, good spots, they dont have capacity rn
+
+//set TASK: expore woods, find places to go on map to show them!
+===
+
+title: askToWalkTHREE
+---
+//Show them the map - they judge based on how many cool places were found
+
+// if plan !good = need to reexplore, find more interesting places
+
+//if plan == good = HELPED! Diary entry appears
+===
+
