@@ -2,6 +2,79 @@
 tags:
 ---
 //first time introduction
+You: *knock knock*
+        ...
+        Hm.
+        No immediate answer.
+        I thought they were home?
+Mouse: zzzzzz
+        Ah.
+        Guess that explains it.
+        ...
+You: hello?
+Mouse:  zzzzzz...
+        Guess I've gotta pull out the big guns.
+You:    *KNOCK KNOCK*
+You:    HELLOOOOOO?
+Mouse:  zzz-dsaasd? huh?
+        Success!
+Mouse:  wasgoinon....
+You:    um, could you come to the door please?
+Mouse:  Ah! 
+Mouse:  Yes!
+Mouse:  Right!
+Mouse:  One second!
+//sounds of slippers
+//mouse appears
+Mouse:  *yawwwwn* 
+Mouse:  Good morn- afternoon?
+Mouse:  Evening?
+Mouse:  Ah whatever.
+Mouse:  Hi!
+You:    Hello!
+        ...
+        I didn't think this far ahead. 
+        What do I say now?!
+
+-> say something smart
+-> say something funny        
+        
+You:    ...
+        can't think can't think can't thi-
+Mouse:  Uh, can I help you with anything?
+        Dangit, words are hard.
+        Just say something! Anything!
+You:    Yes!
+You:    I mean no?
+        I woke them up from their nap for this?!
+You:    I mean - I just moved in opposite!
+You:    I just wanted to introduce myself?
+You:    ... so hello!
+        They smiled at that!
+        Nice
+        Well recovered
+Mouse:  Haha, hello!
+Mouse:  I'm sorry I haven't been round to yours earlier
+Mouse:  Coulda brought you a casserole or something
+        what's a casserole?
+Mouse:  Isn't that what neighbours do?
+Mouse:  But I haven't really been on top of things lately
+Mouse:  Sorry...
+You:    Oh no don't worry about it!
+You:    I've just been settling anyway
+You:    It's been a few weeks and I'm only now getting the courage to talk to people! aha
+        They didn't need to know that.
+        Hey ho.
+Mouse:  I get it
+Mouse:  I can never gather the oomph to get out and about anymore
+Mouse:  Let alone start introducing myself to strangers!
+You:    Being a person is hard.
+Mouse:  Agreed.
+        Okay, now time to try some small talk, I guess?
+        That's what neighbours do?
+        That and something to do with casserole, apparently, but I'll burn that bridge when I get to it.
+
+<<jump discussion>>
 
 //<<advanceEntryNode talkAgain>>
 ===
@@ -33,6 +106,7 @@ tags:
 title: lookAtThem
 ---
 //description of them, body language, vibes - sleepy, unmotivated, stuck in a rut
+        
 
 ->Come back another time?
 ->Ask how they're doing
