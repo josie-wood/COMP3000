@@ -70,7 +70,7 @@ Mouse:  I can never gather the oomph to get out and about anymore
 Mouse:  Let alone start introducing myself to strangers!
 You:    Being a person is hard.
 Mouse:  Agreed.
-        Okay, now time to try some small talk, I guess?
+        Okay, now to find some small talk, I guess?
         That's what neighbours do?
         That and something to do with casserole, apparently, but I'll burn that bridge when I get to it.
 
@@ -91,7 +91,8 @@ tags:
 ---
 // first level of choices 
 
--> Look at them  
+
+-> Look at them  <<if !$lookedAtThem>>
     <<jump lookAtThem>>
 ->Look around the room
     <<jump lookAtRoom>>
@@ -105,16 +106,93 @@ tags:
 
 title: lookAtThem
 ---
+
+<<set $lookedAtThem to true>>
 //description of them, body language, vibes - sleepy, unmotivated, stuck in a rut
-        
+    They're wearing a pair of cosy pyjamas
+    maybe they're having a cosy day at home?
+    And a midday nap?
+    But from the bags under their eyes 
+    and the way they squint into the sunlight
+    it doesn't look like they've had a restful nights sleep in a while.
+    They're still smiling at me
+    but their eyes look weary, and blurry,
+    and keep darting back inside.
+    They're still smiling
+    but the somehow still look...
+    sad. 
 
 ->Come back another time?
+    <<jump comeBackAgain>>
 ->Ask how they're doing
 
 ===
 
 title: comeBackAgain
 ---
+You:    I'm sorry I woke you, 
+You:    Maybe I can swing by another day to chat more?
+You:    You probably want to start making dinner or something anyway.
+        In hindisght, I probably should've left when I heard snoring. 
+        Oops.
+        Hope they aren't too put out.
+Mouse:  Oh? Okay...
+        Their smile dropped a bit
+        Now I feel bad!
+        I woke them up and then tried to leave straight away, that's even worse!
+Mouse:  I suppose I could do with eating something...
+Mouse:  It's been a while,
+Mouse:  I just don't have it in me to cook these days
+Mouse:  Looks like soup for the tenth time this week
+You:    Oh wow.
+You:    That's a lot of soup.
+
+-> Don't you get bored of that much soup?!
+    Mouse:  Of course I do!
+    Mouse:  It's far too much soup!
+    You:    I mean, yeah!
+    You:    That's what I was thinking!
+    You:    So you aren't feeling a bazillionish bowl of soup, eh?
+    Mouse:  You could say that. 
+    Mouse:  I could really go for a nice roast
+            Aren't mice vegetarian?
+    Mouse:  A nut roast, of course
+            Knew it.        
+    Mouse:  Ooh or maybe a pie?
+    Mouse:  A tart?
+    Mouse:  I once had this amazing tart, 
+    Mouse:  Cheesy and onion-y and full of wild garlic
+    -> Wild Garlic?
+        You:    Wild Garlic?
+        You:    I've never had that before
+        You:    Is it good?
+        Mouse:  Oh it's FAB
+        Mouse:  Like garlicky spinach?
+        Mouse:  ... it's better than it sounds
+        Mouse:  And everything tastes good when you gather the ingredients yourself, I suppose
+    -> Make a cheesy pun
+        Okay, lets do this:
+        You:    That sounds pretty GOUDA
+        You:    ...amiright?
+                Smooth
+        Mouse:  heh
+        Mouse:  nice
+        Mouse:  I BRIE was you did there
+        You:    Heh thankyou        
+-> Soup is pretty great.
+    Mouse:  Haha, it certainly can be
+    Mouse:  I used to make the best soups
+    Mouse:  Whatever I could find in the woods, thrown into a pot
+    Mouse:  It was different every time,
+    Mouse:  But somehow also great every time?
+            Great, now I want soup. 
+    You:    I'd love to try it sometime
+            Mouse smiled at that, too
+    Mouse:  Maybe one day. 
+    Mouse:  It's just boring canned stuff today though, 
+    Mouse:  Haven't gotten out to the woods for months
+    Mouse:  So you're not missing anything 
+
 
 //discuss dinner, cooking habits, once foraged, now boring, low effort, survival
 
