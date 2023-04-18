@@ -98,7 +98,8 @@ tags:
     <<jump lookAtRoom>>
 
 //if LearnDepression
--> What do you like to do?
+-> What do you like to do? <<if $Learnt_Depression>>
+    <<jump askWhatMakesHappy>>
 
 //if LearnHiking
 -> Would you like to go for a walk?
@@ -205,6 +206,9 @@ title: askHowDoing
 //ask them how they're getting on
 //learn about their depression
 //set LEARNT info: depression
+<<if !$Learnt_Depression>>
+        <<set $Learnt_Depression to true>>
+<<endif>>
 
 <<jump discussion>>
 ===
@@ -326,6 +330,9 @@ Mouse:  Helps me hide away from it, a bit.
 // more info about depression
 //if not yet - then set LEARNT info: depression
 //provide character insight
+<<if !$Learnt_Depression>>
+        <<set $Learnt_Depression to true>>
+<<endif>>
 
 <<jump discussion>>
 ===
