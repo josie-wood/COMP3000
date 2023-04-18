@@ -94,7 +94,7 @@ tags:
 
 -> Look at them  <<if !$lookedAtThem>>
     <<jump lookAtThem>>
-->Look around the room
+->Look around the room <<if !$lookedAtRoom>>
     <<jump lookAtRoom>>
 
 //if LearnDepression
@@ -171,7 +171,7 @@ You:    That's a lot of soup.
         Mouse:  ... it's better than it sounds
         Mouse:  And everything tastes good when you gather the ingredients yourself, I suppose
     -> Make a cheesy pun
-        Okay, lets do this:
+                Okay, lets do this
         You:    That sounds pretty GOUDA
         You:    ...amiright?
                 Smooth
@@ -195,7 +195,7 @@ You:    That's a lot of soup.
 
 
 //discuss dinner, cooking habits, once foraged, now boring, low effort, survival
-
+<<set $Learnt_Forage to true>>
 <<jump discussion>>
 
 ===
@@ -211,10 +211,31 @@ title: askHowDoing
 
 title: lookAtRoom
 ---
+<<set $lookedAtRoom to true>>
 //describe their house
+        The room behind them is dark,
+        It's going to take my eyes a minute to adjust.
+        Ah, the curtain are shut, that tracks.
+        So I guess their snoring was a full on sleep?
+        Not a cosy spur-of-the-moment nap?
+        This place is set up in full on sleep-mode. 
+        ...
+        My eyes are starting to adjust!
+        ...And there's stuff EVERYWHERE in there!
+        The walls are plastered in frames
+        Filled with mountains and nature and smiling faces.
+        Speaking of mountains-
+        There's a massive lump of boots
+        Towered up nearly as tall as mouse
+        How do they even reach them?
+        They're all covered in that dry, dusty mud,
+        Which whips around as the breeze comes through the door.
+
 
 -> Ask about photos and old boots
+        <<jump askPhotos>>
 -> Ask about curtains
+        <<jump askCurtains>>
 ===
 
 title: askPhotos
@@ -223,12 +244,85 @@ title: askPhotos
 //used to go out and about a lot, travelled, explored
 //been stuck in, lost touch, trapped
 
+You:    I like all those photos behind you!
+You:    Did you see all of those places?
+Mouse:  Oh those?
+Mouse:  Yeah!
+Mouse:  Pretty, right?
+You:    So pretty!
+Mouse:  I love getting out into nature, 
+Mouse:  Exploring a new place
+Mouse:  Climbing up a tricky trail, 
+Mouse:  Almost giving up,
+Mouse:  But then being rewarded by that view at the top!
+
+-> 'Maybe we could explore together one day?'
+        You:    I'd love to take advantage of all of the nature around us here
+        You:    And it looks like I've found a pro-guide!
+                C'mon flattery, work your magic!
+        Mouse:  Well... I could maybe recommend some places?
+        Mouse:  But it's been a long time. 
+        Mouse:  I kinda lost touch with people I used to go with
+        Mouse:  I wouldn't call myself a pro, I can barely get out of bed!
+        You:    I thought you liked -
+        You:    no, LOVED -
+        You:    Getting out and exploring!
+        Mouse:  I do!
+        Mouse:  Or I did?
+        Mouse:  One day I'm sure I'll get back into it.
+        You:    I look forward to that.
+
+-> 'When was the last time you went out?'
+        Mouse:  It's beeeen...
+        Mouse:  a while. 
+                Well duh.
+        You:    Yeah, the dusty boots kinda gave that away
+        Mouse:  Yup. 
+        Mouse:  Nature used to be my happy place
+        Mouse:  Where I felt the most myself, ya'know?
+        Mouse:  But now it all just feels...
+        Mouse:  Out of reach.
+        You:    I'm pretty sure I saw a little woodland down the end of the lane?
+        You:    That's pretty close?
+        Mouse:  Not that kind of out of reach.
+        Mouse:  I'm... scared to go back out there again.
+        Mouse:  Who would I go with?
+        Mouse:  Am I still strong enough?
+        Mouse:  And what if...
+        Mouse:  ...it doesn't make me happy like it used to?
+                ...
+                oof
+        You:    ... Those are some scary thoughts.
+        You:    Maybe one day we could go together?
+        You:    And not go too far?
+        You:    And we'll have the best time we can?
+        Mouse:  Awh, that's sweet.
+        Mouse:  Maybe one day.
+
+<<set $Learnt_Hiking to true>>
 //set LEARNT info: hiking
 <<jump discussion>>
 ===
 
 title: askCurtains
 ---
+
+You:    It looks like you've got a real cosy set up in there?
+You:    With the curtains and everything
+        Subtle
+You:    Could definitely have a good ol' catnap in there
+Mouse:  Cosy, eh?
+Mouse:  Yeah, I guess it is. 
+Mouse:  I've had it set up like this for ages now
+Mouse:  With my sleep being so difficult, 
+Mouse:  And with me feeling...weird
+Mouse:  It just kinda made sense to shut the world out, 
+Mouse:  Rest up, you know?
+You:    I see. 
+You:    Do you think it makes you feel better?
+Mouse:  ...no.
+Mouse:  But I think it makes me feel less bad about feeling bad?
+Mouse:  Helps me hide away from it, a bit.
 // more info about depression
 //if not yet - then set LEARNT info: depression
 //provide character insight
@@ -239,8 +333,79 @@ title: askCurtains
 title: askWhatMakesHappy
 ---
 // option only available if know about depression
+You:    SO, what makes you happiest?
+<<if $Learnt_Forage>>
+You:    Foraging for food in nature?
+<<endif>>
+<<if $Learnt_Hiking>>
+You:    Exploring new places?
+<<endif>>
+Mouse:  Jeez, that's a big question
+Mouse:  What makes you happiest, eh?
 
-//used to walk and forage, now stuck insight, no motivation
+-> 'Nice deflection.'
+        You:    You're avoiding the question!
+        Mouse:  So are you!
+        You:    Well you started it!
+-> 'I'm trying to figure that out.'
+        You:    New place, new me, new happy, ya'know?
+        You:    I'm just trying to get out and meet people and try things
+        You:    And hopefully find happy along the way
+        Mouse:  ...So you wanna try and copy my happy?
+        You:    Sure, yeah, that would be ideal
+
+Mouse:  Ugh, fine. 
+Mouse:  I guess I've always been happiest
+Mouse:  When I'm out in nature
+Mouse:  Connecting with it
+Mouse:  It makes me feel small, 
+Mouse:  But in a good way, if that makes sense?
+You:    I think I get it?
+You:    Maybe?
+        Probably not. 
+
+<<if $Learnt_Forage>>
+        You:    Like the foraging stuff, 
+        You:    Living off of nature and stuff like that?
+        Mouse:  Yeah! 
+                I do get it! Nice!
+        Mouse:  I tend to get caught up in big-picture stuff
+        Mouse:  So it's nice to go back to basics
+        Mouse:  Find food, collect food, eat food.
+        Mouse:  Just like people have done forever
+        You:    That sounds pretty nice.
+        Mouse:  It is.
+<<endif>>
+
+<<if $Learnt_Forage == false>>
+        <<if $Learnt_Hiking>>
+                Mouse:  Like, when I used to go for those hikes and adventures?
+                Mouse:  It wasn't just about walking, and being in nature
+                Mouse:  I also used to camp out, 
+                Mouse:  Gather water,
+                Mouse:  Forage for food,
+                Mouse:  To be a part of nature
+                You:    Like basic survival mode?
+                Mouse:  Yeah I suppose so!
+                Mouse:  Back to the basics of life
+                You:    That sounds pretty nice
+                Mouse:  It is.
+        <<endif>>
+
+        <<if $Learnt_Hiking == false>>
+                Mouse:  My favourite thing to do in nature was foraging.
+                Mouse:  Exploring the wilderness,
+                Mouse:  Looking up plants in my little guide book, 
+                Mouse:  And bringing home my own supper!
+                You:    That's such a cool thing to be able to do!
+                Mouse:  I know right!
+                You:    It sounds pretty nice
+                Mouse:  It is.
+        <<endif>>
+
+        <<set $Learnt_Forage to true>>
+<<endif>>
+//used to walk and forage, now stuck inside, no motivation
 //set LEARNT info: forage
 
 <<jump discussion>>
