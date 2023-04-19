@@ -185,7 +185,7 @@ MonoBehaviour:
   uiPrompt: {fileID: 932074266}
   interactKey: 
   dialogueRunner: {fileID: 590579202}
-  startNode: discussion
+  startNode: IntroduceMouse
 --- !u!212 &321623481
 SpriteRenderer:
   m_ObjectHideFlags: 0
