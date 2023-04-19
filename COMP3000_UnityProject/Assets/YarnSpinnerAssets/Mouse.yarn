@@ -74,14 +74,48 @@ Mouse:  Agreed.
         That's what neighbours do?
         That and something to do with casserole, apparently, but I'll burn that bridge when I get to it.
 
+<<set $smallTalk to 0>>
+<<advanceEntryNode talkAgain>>
+
 <<jump discussion>>
 
-//<<advanceEntryNode talkAgain>>
 ===
 
 title: talkAgain
 ---
 //brief nicities to replace introduction when you speak again before diving into discussion
+        Let's do this.
+Mouse:  Hi again!
+You:    Hi again!
+
+<<if $smallTalk == 0>>
+        //smalltalk 1
+        You:    Nice weather we're having, eh?
+                Classic neighbour talk
+        Mouse:  Oh yeah! Hadn't noticed...
+        Mouse:  It's not too shabby.
+<<endif>>
+
+//smalltalk 2
+<<if $smallTalk == 1>>
+        You:    So... 
+        You:    What's the deal with airplane food?
+        You:    amiright?
+        Mouse:  It is pretty crappy I guess?
+        Mouse:  Is that all you came here to say this time?
+<<endif>>
+
+//smalltalk 3
+<<if $smallTalk == 2>>
+        You:    I like your pyjamas, by the way
+        Mouse:  Me too!
+        Mouse:  They have pockets!
+        You:    Ooh niiiiice
+<<endif>>
+
+<<if $smallTalk <= 2>>
+        <<set $smalltalk to $smallTalk + 1>>
+<<endif>>
 
 <<jump discussion>>
 ===
@@ -98,11 +132,15 @@ tags:
     <<jump lookAtRoom>>
 
 //if LearnDepression
--> What do you like to do? <<if $Learnt_Depression>>
+-> 'What do you like to do?' <<if $Learnt_Depression>>
     <<jump askWhatMakesHappy>>
 
 //if LearnHiking
--> Would you like to go for a walk?
+-> 'Would you like to go for a walk?'
+        <<jump askToWalk>>
+
+-> Walk away
+        <<stop>>
 ===
 
 title: lookAtThem
@@ -126,6 +164,7 @@ title: lookAtThem
 ->Come back another time?
     <<jump comeBackAgain>>
 ->Ask how they're doing
+        <<jump askHowDoing>>
 
 ===
 
@@ -206,6 +245,43 @@ title: askHowDoing
 //ask them how they're getting on
 //learn about their depression
 //set LEARNT info: depression
+
+You:    I hope you don't mind me asking, 
+You:    But are you okay?
+Mouse:  Huh? Oh right
+Mouse:  This is normal for me,
+Mouse:  No need to worry 
+
+-> 'That doesn't really answer my question'
+        You:    You look kinda...
+        You:    Sad.
+        You:    So. Are you okay?
+        Mouse:  I mean
+        Mouse:  I guess I am kinda sad?
+        Mouse:  But mainly I'm just...
+        You:    Numb? 
+        Mouse:  Exactly.
+        Mouse:  So you get it?
+        You:    Unfortunately so.
+        Mouse:  Brains suck. 
+        You:    Brains SUCK.
+                
+-> 'It doesn't sound like you're okay'
+        You:    just like 'not okay' has become 'normal' for you
+        Mouse:  ...Yeah I guess that's about right
+        Mouse:  But there's really no need to worry!
+        Mouse:  I'm fiiiiine
+                Riiiiiiight
+        You:    Maybe you could feel better than fiiiiiine though
+        Mouse:  Maybe.
+        Mouse:  It's just... 
+        Mouse:  Hard.
+        Mouse:  And I've gotten so used to it being like this.
+        You:    That doesn't sound fun. 
+        You:    Brains suck. 
+        Mouse:  Brains SUCK.
+
+
 <<if !$Learnt_Depression>>
         <<set $Learnt_Depression to true>>
 <<endif>>
