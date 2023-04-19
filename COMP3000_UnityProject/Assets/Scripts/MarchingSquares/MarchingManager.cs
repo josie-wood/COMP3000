@@ -27,6 +27,7 @@ public class MarchingManager : MonoBehaviour
 	public int tilemapYSize;
 
 	public GameObject player;
+	public GameObject mapMarker;
 	public Vector3 playerPosition;
 	public Collider2D forestCollider;
 	public Bounds forestBounds;
@@ -88,10 +89,11 @@ public class MarchingManager : MonoBehaviour
 
 			//multiply playerWorldPos in forest by multiplier to get equivalent vertex on tilemap
 
-			int newPositionX = Mathf.RoundToInt(playerWorldPosition.x / translationMultiplier);
-			int newPositionY = Mathf.RoundToInt(playerWorldPosition.y / translationMultiplier);
+			float newPositionX = playerWorldPosition.x / translationMultiplier;
+			float newPositionY = playerWorldPosition.y / translationMultiplier;
 
-			playerTilemapPosition = new Vector3Int(newPositionX, newPositionY, 0);
+			playerTilemapPosition = new Vector3Int(Mathf.RoundToInt(newPositionX), Mathf.RoundToInt(newPositionY), 0);
+			mapMarker.transform.localPosition = new Vector3(newPositionX, newPositionY, 0);
 		}
 		// tilemapBounds bounds of tilemap
 
