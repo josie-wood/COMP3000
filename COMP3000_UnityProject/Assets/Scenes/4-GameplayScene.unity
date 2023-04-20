@@ -1238,7 +1238,7 @@ MonoBehaviour:
   uiPrompt: {fileID: 2130656950}
   interactKey: space
   dialogueRunner: {fileID: 204932637}
-  startNode: discussion
+  startNode: IntroduceMouse
 --- !u!4 &1256391887
 Transform:
   m_ObjectHideFlags: 0
