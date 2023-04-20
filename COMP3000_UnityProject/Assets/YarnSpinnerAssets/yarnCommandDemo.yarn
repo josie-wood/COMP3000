@@ -1,0 +1,19 @@
+﻿title: IntroduceMouse
+tags:
+---
+hello!
+i am a lil mouse 
+yoo hooo
+
+-> hi
+-> yo
+
+<<advanceEntryNode talkAgain>>
+===
+
+title: talkAgain
+tags:
+---
+...didn't we do this already?
+...
+===
