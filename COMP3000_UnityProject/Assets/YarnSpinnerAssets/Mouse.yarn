@@ -84,37 +84,43 @@ Mouse:  Agreed.
 title: talkAgain
 ---
 //brief nicities to replace introduction when you speak again before diving into discussion
-        Let's do this.
+
 Mouse:  Hi again!
 You:    Hi again!
 
-<<if $smallTalk == 0>>
+<<if !$smallTalk1Done>>
         //smalltalk 1
         You:    Nice weather we're having, eh?
                 Classic neighbour talk
         Mouse:  Oh yeah! Hadn't noticed...
         Mouse:  It's not too shabby.
-<<endif>>
-
-//smalltalk 2
-<<if $smallTalk == 1>>
+<<elseif !$smallTalk2Done>>
         You:    So... 
         You:    What's the deal with airplane food?
         You:    amiright?
         Mouse:  It is pretty crappy I guess?
         Mouse:  Is that all you came here to say this time?
-<<endif>>
-
-//smalltalk 3
-<<if $smallTalk == 2>>
+<<elseif !$smallTalk3Done>>
         You:    I like your pyjamas, by the way
         Mouse:  Me too!
         Mouse:  They have pockets!
         You:    Ooh niiiiice
+<<else>>
+        You:    Let's cut to the chase, shall we?
+        Mouse:  Sounds good.
+        Mouse:  Whatcha wanna talk about?
 <<endif>>
 
-<<if $smallTalk <= 2>>
-        <<set $smalltalk to $smallTalk + 1>>
+//reset values based on option just played
+<<if !$smallTalk1Done>>
+        //smalltalk 1 set as done
+        <<set $smallTalk1Done to true>>
+<<elseif !$smallTalk2Done>>
+        //set smalltalk2 as done
+        <<set $smallTalk2Done to true>>
+<<elseif !$smallTalk3Done>>
+        //set smalltalk3 as done
+        <<set $smallTalk3Done to true>>
 <<endif>>
 
 <<jump discussion>>
@@ -123,14 +129,29 @@ You:    Hi again!
 title: discussion
 tags:
 ---
-// first level of choices 
 
+//figure out if first two choices are done
+<<if $lookedAtThem>>
+        <<if $lookedAtRoom>>
+                <<if !$Learnt_Depression>>
+                        <<set $ShowStoppingYouOption to true>>
+                <<endif>>
+        <<endif>>
+<<endif>>
+
+// first level of choices 
 
 -> Look at them  <<if !$lookedAtThem>>
     <<jump lookAtThem>>
 ->Look around the room <<if !$lookedAtRoom>>
     <<jump lookAtRoom>>
 
+// if looked at them and room but haven't learnt depression
+//aka chose comebackagain so learnt forage
+//and chose askphotos so learnt hiking
+
+-> 'What's been stopping you from foraging and exploring?' <<if $ShowStoppingYouOption>>
+        <<jump askStoppingYou>>
 //if LearnDepression
 -> 'What do you like to do?' <<if $Learnt_Depression>>
     <<jump askWhatMakesHappy>>
@@ -413,6 +434,30 @@ Mouse:  Helps me hide away from it, a bit.
 <<jump discussion>>
 ===
 
+title: askStoppingYou
+---
+//reveal depression if haven't found it from the other options
+You:    It sounds like something really important to you
+You:    What's making it hard?
+Mouse:  It's just...
+Mouse:  Easier said than done, at the moment
+Mouse:  I love the IDEA of getting back out there again!
+Mouse:  But in practice I can barely keep myself awake and fed
+Mouse:  The outside world is intimidating
+You:    Sometimes just existing is tricky
+Mouse:  It is!
+You:    Maybe we can work together and try and make it a bit easier?
+Mouse:  ... I feel guilty asking that of you.
+You:    Psssh nah don't feel bad
+You:    It'll probably make me feel better too
+You:    Win-win!
+You:    Deal?
+Mouse:  ...Maybe.
+Mouse:  With your help.
+Mouse:  Thankyou.
+
+<<jump discussion>>
+===
 title: askWhatMakesHappy
 ---
 // option only available if know about depression
@@ -496,25 +541,72 @@ You:    Maybe?
 
 title: askToWalk
 ---
+
+<<if !$Task_Foraged>>
 //------STEP ONE-----------------------
 //if havent foraged or planned yet
-<<jump askToWalkONE>>
-
+        <<jump askToWalkONE>>
+<<elseif !$Task_Planned>>
 //------STEP TWO----------------------
 //once they've foraged
-<<jump askToWalkTWO>>
-
+        <<jump askToWalkTWO>>
+<<else>>
 //-----STEP THREE---------------------
 // once they've been to woods
-<<jump askToWalkTHREE>>
+        <<jump askToWalkTHREE>>
+<<endif>>
+
 ===
 
 title: askToWalkONE
 ---
-// they dimiss, too tired, need to be reminded, inspired
-//if !LearntForage = need to find a grounding acrivity outside to remind them what they 
-//used to enjot
+//see if players already ahd this talk
+<<if !$askedToWalkONE_done>>
+        // they dimiss, too tired, need to be reminded, inspired
+        //if !LearntForage = need to find a grounding activity outside to remind them what they 
+        //used to enjot
+        Mouse:  Not right now, sorry
+        You:    C'mon, it's a lovely day for it!
+        Mouse:  I'm just too tired
+        Mouse:  Getting out and walking a bunch doesn't sound so fun right now.
+        Mouse:  What's even the point?
 
+        <<if $Learnt_Forage>>
+                You:    Maybe we could go find some food!
+                You:    Like the foraging you told me about?
+                Mouse:  That sounds nice,
+                Mouse:  But I don't even know where to look. 
+                Mouse:  There's probably not even anything to find around here
+                        Hmmm...
+                        Maybe I need to scope out the area first?
+                You:    What if I go by myself first?
+                You:    See if there's anything fun to be found?
+                Mouse:  Ooh maybe
+                Mouse:  Yeah, come back if you find anything!
+        <<else>>
+                You:    Well, what did you used to do on your adventures?
+                You:    Is there a way to make it more fun?
+                Mouse:  Hmmm...
+                Mouse:  Well maybe if you find something exciting we could look for?
+                Mouse:  I used to like foraging for food
+                You:    That sounds fun!
+                You:    So if I go on a reconnaissance mission first,
+                You:    See if there's any wild food growing,
+                You:    And if I find anything, you might join?
+                Mouse:  Yeah, maybe!
+                Mouse:  Would be good to know what's around here 
+                Mouse:  Let me know if you find anything!
+                <<set $Learnt_Forage to true>>
+        <<endif>>
+        <<set $askedToWalkONE_done to true>>
+
+<<elseif $askedToWalkONE_done>>
+//had this conversation before
+        Mouse:  No thanks!
+        Mouse:  Go find some food growing nearby and show me,
+        Mouse:  That should help inspire me.
+        You:    Okey doke!
+<<endif>>
 //if LearntForage = need to bring foraged goods!
 // set TASK: forage
 ===
@@ -522,8 +614,58 @@ title: askToWalkONE
 title: askToWalkTWO
 ---
 
-//they're reminded how much they enjoyed it!
-// you need to plan the route though, good spots, they dont have capacity rn
+//see if theyve had this convo already
+<<if !$askedToWalkTWO_done>>
+        //they're reminded how much they enjoyed it!
+        // you need to plan the route though, good spots, they dont have capacity rn
+        You:    Look what I found!
+        -> Show them the blackberries
+        Mouse:  Oooh that's so exciting!
+        Mouse:  We could make a jam or a crumble or anything!
+        Mouse:  Where did you find them?
+        -> 'Just down the lane, by the entrance to the woods!'
+                You:    I bet there's loads more to be found in the actual woods!
+                Mouse:  Ooh probably! 
+                Mouse:  And woodlands are so fun to explore
+                Mouse:  There are so many hidey places and twisty turns to check out!
+                You:    So, wanna go for that walk in the woods?
+        -> 'You've gotta come with if you want to find out!'
+                Mouse:  Very sneaky!
+                Mouse:  I am intrigued to find out where we could find things...
+                You:    I have a good area in mind we could explore
+                You:    So, wanna go for that walk?
+
+        Mouse:  ...It sounds really tempting!
+        Mouse:  But I don't think I'm up for a full-on exploration.
+        Mouse:  I don't have the mental or physical bandwidth for it right now
+        You:    Oh dang
+        You:    Well, how can I make it easier?
+        Mouse:  Could you explore it first?
+        Mouse:  Find some good spots we can hit?
+        Mouse:  If you can learn the area,
+        Mouse:  And discover some wild food to forage,
+        Mouse:  Then I'd feel more comfortable joining you next time!
+        Mouse:  The unknown is a lot scarier for me than it used to be
+        You:    Yeah of course!
+        You:    I'll go explore,
+        You:    Draw up a map of the area
+        You:    And then show you so you can decide if you wanna come with!
+        Mouse:  That would be perfect!
+        Mouse:  Thank you so much for your help!
+        Mouse:  Here's a little book to help
+        Mouse:  It'll make it easier to spot edible plants
+        You:    Perfect, thankyou!
+        Mouse:  No worries!
+        Mouse:  I'll see you again when you've explored a bit for us.
+<<elseif $askedToWalkTWO_done>>
+//already had this chat
+        Mouse:  I'm not ready to walk yet.
+        Mouse:  Can you go and explore first?
+        Mouse:  Show me a route through the woods
+        Mouse:  If you find a few good spots we can go to
+        Mouse:  Then it'll be less scary for me to join you!
+        You:    Okey doke, will do!
+<<endif>>
 
 //set TASK: expore woods, find places to go on map to show them!
 ===
@@ -531,9 +673,88 @@ title: askToWalkTWO
 title: askToWalkTHREE
 ---
 //Show them the map - they judge based on how many cool places were found
+You:    I explored the woods!
+-> Show them your map
 
+<<if !$PlanApproved>>
 // if plan !good = need to reexplore, find more interesting places
+        Mouse:  Hmmm...
+                Oof.
+                Not a great sign.
+        You:    What's up?
+        Mouse:  There's just...
+        Mouse:  Not many cool places to go see on this map.
+        You:    Dang
 
+        -> 'Shall I go find some more?'
+                Mouse:  I'd really appreciate that!
+               
+        -> 'Can we go anyway?'
+                Mouse:  Hmmm...
+                Mouse:  I'm just not really feeling inspired
+                Mouse:  I'd like a better idea of where we'd go
+                Mouse:  And what we'd see.
+        
+        You:    Anything in particular you want me to find?
+        Mouse:  Just some more edible plants we can collect!
+        Mouse:  They should be easy to spot now you have the book
+        Mouse:  If you can find at least 3 good spots that would be ace
+        You:    I'm sure I can do that!
+        Mouse:  Thank you so much!
+        Mouse:  See you again soon!
+        You:    Seeya in a bit!
+
+<<else>>
 //if plan == good = HELPED! Diary entry appears
-===
+        Mouse:  Oh this looks GREAT!
+        Mouse:  So many cool spots!
+        Mouse:  I have a great recipe for this one!
+        Mouse:  And have always wanted to try this!
+                Sounds pretty promising
+        You:    Sooo...
+        You:    Wanna head out and collect some of these things together?
+        Mouse:  Yes please!
+        Mouse:  Let me just put my hikers on!
+                WOOHOO!
+<<endif>>
 
+===
+title: conclusion
+---
+Mouse:  Thank you so much for encouraging me to get out again!
+Mouse:  Your help made it so much easier!
+You:    No worries at all!
+-> 'It actually made me feel a bit better'
+        You:    It was nice to get outside
+        You:    And even better to do it with a...
+                Say it
+        You:    Friend?
+        Mouse:  It was nice, wasn't it!
+        Mouse:  I'm glad to have made a friend like you 
+-> 'How are you feeling now?'
+        Mouse:  I think...
+        Mouse:  A bit better?
+        Mouse:  Not completely
+        Mouse:  But I feel a bit more awake, 
+        Mouse:  And I'm a bit less numb
+        You:    That's so great to hear!
+        You:    A step in the right direction
+        Mouse:  Thanks for helping me to get there!
+        Mouse:  I'm glad to have made a friend like you.
+                AWWWW
+        You:    Me too. 
+
+Mouse:  Maybe we can make it a more regular thing?
+You:    That sounds lovely
+Mouse:  Maybe next week?
+Mouse:  Now I've taken the first step and gotten out again,
+Mouse:  I think I'm feeling confident enough
+Mouse:  To plan the next one by myself!
+You:    I can't wait to see where you take us
+Mouse:  I think it'll be pretty nice
+You:    I'm sure it will be
+You:    Thank you for planning it
+Mouse:  Thank you for helping
+
+
+===

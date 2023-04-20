@@ -1490,6 +1490,10 @@ PrefabInstance:
       propertyPath: startAutomatically
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3362060261409852057, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
+      propertyPath: runSelectedOptionAsLine
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3653584866868415269, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
