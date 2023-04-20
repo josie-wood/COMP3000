@@ -139,6 +139,12 @@ tags:
         <<endif>>
 <<endif>>
 
+//figure out if learnt depression and haven't asked what makes happy
+<<if !$askedWhatHappy>>
+        <<if $Learnt_Depression>>
+                <<set $ShowAskHappyOption to true>>
+        <<endif>>
+<<endif>>
 // first level of choices 
 
 -> Look at them  <<if !$lookedAtThem>>
@@ -153,14 +159,17 @@ tags:
 -> 'What's been stopping you from foraging and exploring?' <<if $ShowStoppingYouOption>>
         <<jump askStoppingYou>>
 //if LearnDepression
--> 'What do you like to do?' <<if $Learnt_Depression>>
+-> 'What do you like to do?' <<if $ShowAskHappyOption>> 
     <<jump askWhatMakesHappy>>
 
 //if LearnHiking
--> 'Would you like to go for a walk?'
+-> 'Would you like to go for a walk?' <<if $askedWhatHappy>>
         <<jump askToWalk>>
 
 -> Walk away
+        You:    Okay, imma head out now
+        You:    Byeeee!
+        Mouse:  Bye!
         <<stop>>
 ===
 
@@ -456,6 +465,9 @@ Mouse:  ...Maybe.
 Mouse:  With your help.
 Mouse:  Thankyou.
 
+<<set $Learnt_Depression to true>>
+<<set $ShowStoppingYouOption to false>>
+
 <<jump discussion>>
 ===
 title: askWhatMakesHappy
@@ -535,6 +547,9 @@ You:    Maybe?
 <<endif>>
 //used to walk and forage, now stuck inside, no motivation
 //set LEARNT info: forage
+
+<<set $askedWhatHappy to true>>
+<<set $ShowAskHappyOption to false>>
 
 <<jump discussion>>
 ===

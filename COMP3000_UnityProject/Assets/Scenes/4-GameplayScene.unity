@@ -128,7 +128,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3362060261409852057, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
   m_PrefabInstance: {fileID: 246393926}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 788639791}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
@@ -147,7 +147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3362060261409852057, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
       propertyPath: runSelectedOptionAsLine
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3653584866868415269, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
       propertyPath: m_SizeDelta.y
@@ -737,6 +737,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &788639791 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4121586724569924324, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
+  m_PrefabInstance: {fileID: 246393926}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &788639794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788639791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 097b95c9f69f04f2d8c08a817e7786af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueView: {fileID: 1191975947}
+  continueActionType: 1
+  continueActionKeyCode: 32
 --- !u!1 &812764042
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,6 +1055,17 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &1191975947 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8428213010498666189, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
+  m_PrefabInstance: {fileID: 246393926}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddcdd604a328c4ab296f048eb7b3a925, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1226283275
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,7 +1238,7 @@ MonoBehaviour:
   uiPrompt: {fileID: 2130656950}
   interactKey: space
   dialogueRunner: {fileID: 204932637}
-  startNode: IntroduceMouse
+  startNode: discussion
 --- !u!4 &1256391887
 Transform:
   m_ObjectHideFlags: 0
