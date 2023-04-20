@@ -1,8 +1,0 @@
-﻿title: Start
-position: -284,-103
----
-Who do you want to speak to?
--> Mouse 
-    <<jump MouseStart>>
-===
-
