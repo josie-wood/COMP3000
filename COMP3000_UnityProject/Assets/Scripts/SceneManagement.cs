@@ -15,6 +15,18 @@ public class SceneManagement : MonoBehaviour
         
     }
 
+    public void loadGivenScene(string sceneName)
+    {
+        //loads scene based on string given
+        try
+        {
+            SceneManager.LoadScene(sceneName);
+        }
+        catch 
+        {
+            Debug.Log("couldnt load a scene called: " + sceneName);
+        }
+	}
     public void loadMenu()
     {
         SceneManager.LoadScene("2-MainMenuScene");

@@ -11,7 +11,7 @@ public class Interactable : MonoBehaviour
     public Collider2D range;
     public GameObject uiPrompt;
 	public string interactKey;
-	private bool withinRange;
+	public bool withinRange;
 	public DialogueRunner dialogueRunner;
 	public string startNode;
 	public YarnManager yarnManager;
@@ -26,7 +26,6 @@ public class Interactable : MonoBehaviour
 	}
 	private void Update()
 	{
-		//Debug.Log("blahblah");
 		if (withinRange)
 		{
 			if (Input.GetKeyUp("space"))
