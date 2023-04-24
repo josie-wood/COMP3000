@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -14,6 +15,9 @@ public class PlayerController : MonoBehaviour
     public SpriteRenderer playerSprite;
 
     public bool movementLocked = false;
+
+    public List<string> inventory = new List<string>();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,8 +49,9 @@ public class PlayerController : MonoBehaviour
         }
 
 	}
-
-    public void lockMovement()
+    // MOVEMENT
+	#region
+	public void lockMovement()
     {
         //used to lock movement when talking to NPC
         Vector2 still = new Vector2(0, 0);
@@ -92,4 +97,37 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+	#endregion
+
+	// INVENTORY
+	#region
+    public void addToInventory(string itemName)
+    {
+        if (!inventory.Contains(itemName))
+        {
+            // item isn't already in array
+            // so add to inventory
+            inventory.Add(itemName);
+        }
+        else
+        {
+            //item is already in inventory
+            //can't collect it
+        }
+    }
+
+    public bool checkIfHolding(string itemName)
+    {
+		if (inventory.Contains(itemName))
+		{
+            // item isn't already in array
+            return true;
+		}
+		else
+		{
+            //item is already in inventory
+            return false;
+		}
+	}
+	#endregion
 }

@@ -13,6 +13,8 @@ public class YarnManager : MonoBehaviour
     public GameObject player;
     public PlayerController playerControl;
 
+    public GameObject currentlyInteractingWith;
+
 	public void Awake()
 	{
         //create new commands here
@@ -24,8 +26,15 @@ public class YarnManager : MonoBehaviour
             AdvanceEntryNode        //name of c# method to run
             );
 
-        //make endingDialogue listen to the dialoguerunner
-        dialogueRunner.onDialogueComplete.AddListener(endingDialogue);
+		//create Forage command
+		dialogueRunner.AddCommandHandler
+            (
+			"forage",     // name of new yarn command
+			Forage        //name of c# method to run
+			);
+
+		//make endingDialogue listen to the dialoguerunner
+		dialogueRunner.onDialogueComplete.AddListener(endingDialogue);
 
         //get player
         player = GameObject.FindGameObjectWithTag("Player");
@@ -37,6 +46,11 @@ public class YarnManager : MonoBehaviour
     {
         NPC.updateStartNode(newEntryNode);
 
+    }
+
+    public void Forage()
+    {
+        currentlyInteractingWith.GetComponent<Food>().Forage();
     }
 
     public void startingDialogue()
@@ -53,5 +67,10 @@ public class YarnManager : MonoBehaviour
 		playerControl.unlockMovement();
 
 	}
+
+    public void setCurrentInteractingWith(GameObject newInteractable)
+    {
+        currentlyInteractingWith= newInteractable;
+    }
 
 }

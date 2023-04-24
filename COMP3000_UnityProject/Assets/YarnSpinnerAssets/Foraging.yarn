@@ -1,0 +1,22 @@
+﻿title: blackberry
+tags:
+---
+A blackberry bush!
+-> Forage
+    <<forage>> 
+    <<jump foraged>>
+-> Walk Away
+===
+
+title: foraged
+---
+
+added to inventory
+===
+
+title: alreadyForaged
+---
+
+I already have one of these!
+
+===
