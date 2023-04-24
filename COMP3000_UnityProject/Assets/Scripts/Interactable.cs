@@ -14,6 +14,7 @@ public class Interactable : MonoBehaviour
 	private bool withinRange;
 	public DialogueRunner dialogueRunner;
 	public string startNode;
+	public YarnManager yarnManager;
 
 	private void Start()
 	{
@@ -21,6 +22,7 @@ public class Interactable : MonoBehaviour
 		{
 			interactKey = "space";
 		}
+
 	}
 	private void Update()
 	{
@@ -34,9 +36,12 @@ public class Interactable : MonoBehaviour
 				// play node
 				Debug.Log("trying to start the dialogue now");
 				dialogueRunner.StartDialogue(startNode);
+
+				yarnManager.startingDialogue();
 			}
 		}
 	}
+	
 
 
 	private void OnTriggerEnter2D(Collider2D collision)

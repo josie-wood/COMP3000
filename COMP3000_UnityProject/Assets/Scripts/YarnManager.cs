@@ -10,6 +10,8 @@ public class YarnManager : MonoBehaviour
 {
     public DialogueRunner dialogueRunner;
 	public Interactable NPC;
+    public GameObject player;
+    public PlayerController playerControl;
 
 	public void Awake()
 	{
@@ -21,6 +23,13 @@ public class YarnManager : MonoBehaviour
             "advanceEntryNode",     // name of new yarn command
             AdvanceEntryNode        //name of c# method to run
             );
+
+        //make endingDialogue listen to the dialoguerunner
+        dialogueRunner.onDialogueComplete.AddListener(endingDialogue);
+
+        //get player
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerControl = player.GetComponent<PlayerController>();
 	}
 
 
@@ -29,5 +38,20 @@ public class YarnManager : MonoBehaviour
         NPC.updateStartNode(newEntryNode);
 
     }
+
+    public void startingDialogue()
+    {
+		//lock movement when talking to NPC
+		playerControl.lockMovement();
+	}
+
+    public void endingDialogue()
+    {
+		//runs when onDialogueEnd is ran from the line provider
+
+		//return movement to normal
+		playerControl.unlockMovement();
+
+	}
 
 }
