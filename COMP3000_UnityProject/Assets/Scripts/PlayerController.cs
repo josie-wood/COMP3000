@@ -135,15 +135,13 @@ public class PlayerController : MonoBehaviour
             return false;
 		}
 	}
-	#endregion
+	
+    public int getInventorySize()
+    {
+        return inventory.Count;
+    }
+    #endregion
 
-	// EXPLORATION
-	// Player can explore the forest
-	// As they hit colliders associated with areas
-	// Their exploration score goes up 
-	// When exploration score is high enough, their plan is set as good
-	#region
-
-	#endregion
+	
 
 }

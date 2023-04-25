@@ -3,13 +3,53 @@ tags:
 ---
 A blackberry bush!
 <<if checkInventory("blackberry") == false>>
-    -> Forage
+    -> Collect blackberries to show Mouse
         <<forage>> 
         <<jump foraged>>
     -> Walk Away
 <<else>>
     <<jump alreadyForaged>>
 <<endif>>
+===
+
+title: chanterelle
+---
+A cluster of golden yellow mushrooms!
+-> Look up in field guide
+        I found a match!
+        'Chanterelle, or Cantharellus cibarius'
+        'A yellow, funnel shaped mushroom found growing on the ground in woodland'
+        'Tasty fried up in some butter'
+        -> Collect chanterelles <<if checkInventory("chanterelle") == false>>
+            <<forage>> 
+            <<jump foraged>>
+-> Walk Away
+
+===
+
+title: garlic
+---
+A veritable ocean of garlicky-smelling leaves!
+-> Look up in field guide
+        I found a match!
+        'Wild garlic, also known as Ransoms, scientific name Allium ursinum'
+        'Often found growing in large patches in the woods'
+        'Pick the leaves without disrupting the bulbs, and use as you would spinach'
+        -> Gather garlic <<if checkInventory("garlic") == false>>
+            <<forage>> 
+            <<jump foraged>>
+-> Walk Away
+===
+title: dandelions
+---
+A fluffy yellow flower growing amongst the grass
+-> Look up in field guide
+        I found a match!
+        'Dandelion, scientific name Taraxacum Officinale'
+        -> Pick some dandelions <<if checkInventory("garlic") == false>>
+            <<forage>> 
+            <<jump foraged>>
+-> Walk Away
 ===
 
 title: foraged
@@ -21,6 +61,7 @@ added to inventory
 title: alreadyForaged
 ---
 
-I already have one of these!
+I already have some of these!
+I'll leave the rest for others to find.
 
 ===

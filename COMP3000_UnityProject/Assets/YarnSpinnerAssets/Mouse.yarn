@@ -664,12 +664,14 @@ title: askToWalkTWO
         Mouse:  The unknown is a lot scarier for me than it used to be
         You:    Yeah of course!
         You:    I'll go explore,
-        You:    Draw up a map of the area
+        You:    Draw up a map of the area,
+        You:    Collect any wild food I find on the way,
+        You:    Mark those spots on the map,
         You:    And then show you so you can decide if you wanna come with!
         Mouse:  That would be perfect!
         Mouse:  Thank you so much for your help!
         Mouse:  Here's a little book to help
-        Mouse:  It'll make it easier to spot edible plants
+        Mouse:  It'll make it easier to spot the edible plants
         You:    Perfect, thankyou!
         Mouse:  No worries!
         Mouse:  I'll see you again when you've explored a bit for us.
@@ -679,7 +681,9 @@ title: askToWalkTWO
 //already had this chat
         Mouse:  I'm not ready to walk yet.
         Mouse:  Can you go and explore first?
-        Mouse:  Show me a route through the woods
+        Mouse:  Go find some wild food growing in the woods
+        Mouse:  Collect it to add it to the map
+        Mouse:  And then show it to me!
         Mouse:  If you find a few good spots we can go to
         Mouse:  Then it'll be less scary for me to join you!
         You:    Okey doke, will do!
@@ -701,7 +705,7 @@ You:    I explored the woods!
                 Not a great sign.
         You:    What's up?
         Mouse:  There's just...
-        Mouse:  Not many cool places to go see on this map.
+        Mouse:  Not many cool places to forage marked on this map.
         You:    Dang
 
         -> 'Shall I go find some more?'
@@ -715,10 +719,13 @@ You:    I explored the woods!
         
         You:    Anything in particular you want me to find?
         Mouse:  Just some more edible plants we can collect!
-        Mouse:  They should be easy to spot now you have the book
-        Mouse:  If you can find at least 3 good spots that would be ace
+        Mouse:  They should be easy to spot and identify now you have the book
+        Mouse:  Find some plants, look them up,
+        Mouse:  And gather them to add a pin to the map!
+        Mouse:  That way we can go back and find them together!
         You:    I'm sure I can do that!
         Mouse:  Thank you so much!
+        Mouse:  If you can find at least 3 types of food growing in the woods that would be great
         Mouse:  See you again soon!
         You:    Seeya in a bit!
 

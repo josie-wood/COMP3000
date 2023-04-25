@@ -16,7 +16,7 @@ public class YarnManager : MonoBehaviour
 
     public GameObject currentlyInteractingWith;
 	private bool exploredWoods { get; set; }
-	private bool walkIsGood { get; set; }
+
 	public AreaEntrance forestEntrance;
 
 	public void Awake()
@@ -115,7 +115,16 @@ public class YarnManager : MonoBehaviour
 
 	private bool CheckWalkIsGood() 
 	{
-		return walkIsGood;
+		int numOfFoodsFound = playerControl.getInventorySize();
+
+		if(numOfFoodsFound >= 4)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
 	public void startingDialogue()
     {
