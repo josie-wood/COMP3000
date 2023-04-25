@@ -15,6 +15,9 @@ public class YarnManager : MonoBehaviour
     public PlayerController playerControl;
 
     public GameObject currentlyInteractingWith;
+	private bool exploredWoods { get; set; }
+	private bool walkIsGood { get; set; }
+	public AreaEntrance forestEntrance;
 
 	public void Awake()
 	{
@@ -39,6 +42,34 @@ public class YarnManager : MonoBehaviour
 		  (
 		  "checkInventory",     // name of new yarn command
 		  CheckInventory        //name of c# method to run
+		  );
+
+		//create function to check if player found blackberries
+		dialogueRunner.AddFunction<bool>
+		  (
+		  "foundBlackberries",     // name of new yarn command
+		  CheckFoundBlackberries       //name of c# method to run
+		  );
+
+		//command to unlock woods area
+		dialogueRunner.AddCommandHandler
+			(
+			"unlockWoods",     // name of new yarn command
+			UnlockWoods        //name of c# method to run
+			);
+
+		//function to check if player has entered the woods yet
+		dialogueRunner.AddFunction<bool>
+		  (
+		  "exploredWoods",     // name of new yarn command
+		  CheckExploredWoods       //name of c# method to run
+		  );
+
+		//function check route plan quality
+		dialogueRunner.AddFunction<bool>
+		  (
+		  "walkIsGood",     // name of new yarn command
+		  CheckWalkIsGood       //name of c# method to run
 		  );
 
 		//make endingDialogue listen to the dialoguerunner
@@ -67,7 +98,26 @@ public class YarnManager : MonoBehaviour
         return playerControl.checkIfHolding(itemName);
     }
 
-    public void startingDialogue()
+    private bool CheckFoundBlackberries()
+    {
+		return playerControl.checkIfHolding("blackberry");
+	}
+
+	private void UnlockWoods()
+	{
+		forestEntrance.setAreaAccessibility(true);
+	}
+
+	private bool CheckExploredWoods()
+	{
+		return exploredWoods;
+	}
+
+	private bool CheckWalkIsGood() 
+	{
+		return walkIsGood;
+	}
+	public void startingDialogue()
     {
 		//lock movement when talking to NPC
 		playerControl.lockMovement();

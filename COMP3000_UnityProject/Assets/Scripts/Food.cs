@@ -26,19 +26,21 @@ public class Food : Interactable
 		if (withinRange)
 		{
 			if (Input.GetKeyUp("space"))
-			{
-				Debug.Log("interactionKeyPressed " + interactKey);
+				if (dialogueRunner.IsDialogueRunning == false)
+				{
+					Debug.Log("interactionKeyPressed " + interactKey);
 
-				// play node
-				Debug.Log("trying to start the dialogue now");
-				dialogueRunner.StartDialogue(startNode);
+					// play node
+					Debug.Log("trying to start the dialogue now");
+					dialogueRunner.StartDialogue(startNode);
 
-                //set this as currently interacting object in yarnMan
+					//set this as currently interacting object in yarnMan
 
-                yarnManager.setCurrentInteractingWith(this.gameObject);
+					yarnManager.setCurrentInteractingWith(this.gameObject);
 
-				yarnManager.startingDialogue();
-			}
+					yarnManager.startingDialogue();
+				}
+			
 		}
 	}
 

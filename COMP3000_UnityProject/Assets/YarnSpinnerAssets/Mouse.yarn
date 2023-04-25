@@ -557,11 +557,11 @@ You:    Maybe?
 title: askToWalk
 ---
 
-<<if !$Task_Foraged>>
+<<if foundBlackberries() == false>>
 //------STEP ONE-----------------------
 //if havent foraged or planned yet
         <<jump askToWalkONE>>
-<<elseif !$Task_Planned>>
+<<elseif exploredWoods() == false>>
 //------STEP TWO----------------------
 //once they've foraged
         <<jump askToWalkTWO>>
@@ -614,6 +614,7 @@ title: askToWalkONE
                 <<set $Learnt_Forage to true>>
         <<endif>>
         <<set $askedToWalkONE_done to true>>
+        
 
 <<elseif $askedToWalkONE_done>>
 //had this conversation before
@@ -672,6 +673,8 @@ title: askToWalkTWO
         You:    Perfect, thankyou!
         Mouse:  No worries!
         Mouse:  I'll see you again when you've explored a bit for us.
+
+        <<unlockWoods>>
 <<elseif $askedToWalkTWO_done>>
 //already had this chat
         Mouse:  I'm not ready to walk yet.
@@ -691,7 +694,7 @@ title: askToWalkTHREE
 You:    I explored the woods!
 -> Show them your map
 
-<<if !$PlanApproved>>
+<<if !walkIsGood()>>
 // if plan !good = need to reexplore, find more interesting places
         Mouse:  Hmmm...
                 Oof.
@@ -719,7 +722,7 @@ You:    I explored the woods!
         Mouse:  See you again soon!
         You:    Seeya in a bit!
 
-<<else>>
+<<elseif walkIsGood()>>
 //if plan == good = HELPED! Diary entry appears
         Mouse:  Oh this looks GREAT!
         Mouse:  So many cool spots!

@@ -11,7 +11,7 @@ public class AreaEntrance : Interactable
 
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -19,10 +19,14 @@ public class AreaEntrance : Interactable
     {
 		if (withinRange)
 		{
-			if (Input.GetKeyUp("space"))
+			if (Input.GetKeyUp("space") && areaAccessible)
 			{
                 goToNewArea();
 			}
+            else if (Input.GetKeyUp("space") && !areaAccessible)
+            {
+                Debug.Log("area is locked");
+            }
 		}
 	}
 
@@ -37,5 +41,10 @@ public class AreaEntrance : Interactable
 
         }
 
+    }
+
+    public void setAreaAccessibility(bool newState)
+    {
+        areaAccessible = newState;
     }
 }

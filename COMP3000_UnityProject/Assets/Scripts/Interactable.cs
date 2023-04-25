@@ -28,15 +28,18 @@ public class Interactable : MonoBehaviour
 	{
 		if (withinRange)
 		{
-			if (Input.GetKeyUp("space"))
+			if (Input.GetKeyUp("space") )
 			{
-				Debug.Log("interactionKeyPressed " + interactKey);
+				if(dialogueRunner.IsDialogueRunning == false)
+				{
+					Debug.Log("interactionKeyPressed " + interactKey);
 
-				// play node
-				Debug.Log("trying to start the dialogue now");
-				dialogueRunner.StartDialogue(startNode);
+					// play node
+					Debug.Log("trying to start the dialogue now");
+					dialogueRunner.StartDialogue(startNode);
 
-				yarnManager.startingDialogue();
+					yarnManager.startingDialogue();
+				}
 			}
 		}
 	}

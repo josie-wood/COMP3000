@@ -1240,7 +1240,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &812764043
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1390,6 +1390,7 @@ MonoBehaviour:
   player: {fileID: 0}
   playerControl: {fileID: 0}
   currentlyInteractingWith: {fileID: 0}
+  forestEntrance: {fileID: 398712321}
 --- !u!4 &1104910802
 Transform:
   m_ObjectHideFlags: 0
@@ -1791,7 +1792,7 @@ MonoBehaviour:
   interactKey: space
   withinRange: 0
   dialogueRunner: {fileID: 204932637}
-  startNode: IntroduceMouse
+  startNode: discussion
   yarnManager: {fileID: 1104910801}
 --- !u!4 &1256391887
 Transform:
@@ -2182,7 +2183,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1791990849
 RectTransform:
   m_ObjectHideFlags: 0

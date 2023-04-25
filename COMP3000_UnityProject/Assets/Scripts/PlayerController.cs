@@ -49,8 +49,12 @@ public class PlayerController : MonoBehaviour
         }
 
 	}
-    // MOVEMENT
+	// MOVEMENT
+	// Player moves around the world to explore and interact.
+	// Movement affects animation.
+	// Movement paused when reading dialogue/pop ups.
 	#region
+
 	public void lockMovement()
     {
         //used to lock movement when talking to NPC
@@ -100,6 +104,8 @@ public class PlayerController : MonoBehaviour
 	#endregion
 
 	// INVENTORY
+    // Player can collect items and add to inventory
+    // Only one of each item
 	#region
     public void addToInventory(string itemName)
     {
@@ -130,4 +136,14 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 	#endregion
+
+	// EXPLORATION
+	// Player can explore the forest
+	// As they hit colliders associated with areas
+	// Their exploration score goes up 
+	// When exploration score is high enough, their plan is set as good
+	#region
+
+	#endregion
+
 }
