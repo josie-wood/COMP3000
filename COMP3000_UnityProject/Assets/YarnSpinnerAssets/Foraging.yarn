@@ -2,10 +2,14 @@
 tags:
 ---
 A blackberry bush!
--> Forage
-    <<forage>> 
-    <<jump foraged>>
--> Walk Away
+<<if checkInventory("blackberry") == false>>
+    -> Forage
+        <<forage>> 
+        <<jump foraged>>
+    -> Walk Away
+<<else>>
+    <<jump alreadyForaged>>
+<<endif>>
 ===
 
 title: foraged

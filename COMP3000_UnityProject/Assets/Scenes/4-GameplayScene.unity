@@ -272,7 +272,7 @@ MonoBehaviour:
   dialogueRunner: {fileID: 204932637}
   startNode: blackberry
   yarnManager: {fileID: 1104910801}
-  foodName: Blackberry
+  foodName: blackberry
   player: {fileID: 0}
   playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 96e8e913c74487a46b2c9e67a322af13, type: 3}
@@ -737,7 +737,7 @@ MonoBehaviour:
   dialogueRunner: {fileID: 204932637}
   startNode: blackberry
   yarnManager: {fileID: 1104910801}
-  foodName: Blackberry
+  foodName: blackberry
   player: {fileID: 0}
   playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 96e8e913c74487a46b2c9e67a322af13, type: 3}
@@ -2059,7 +2059,7 @@ MonoBehaviour:
   dialogueRunner: {fileID: 204932637}
   startNode: blackberry
   yarnManager: {fileID: 1104910801}
-  foodName: Blackberry
+  foodName: blackberry
   player: {fileID: 0}
   playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 96e8e913c74487a46b2c9e67a322af13, type: 3}

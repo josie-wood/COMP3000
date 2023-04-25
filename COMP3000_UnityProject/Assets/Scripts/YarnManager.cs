@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -33,6 +34,13 @@ public class YarnManager : MonoBehaviour
 			Forage        //name of c# method to run
 			);
 
+		//create CheckInventory function
+		dialogueRunner.AddFunction<string, bool>
+		  (
+		  "checkInventory",     // name of new yarn command
+		  CheckInventory        //name of c# method to run
+		  );
+
 		//make endingDialogue listen to the dialoguerunner
 		dialogueRunner.onDialogueComplete.AddListener(endingDialogue);
 
@@ -42,7 +50,7 @@ public class YarnManager : MonoBehaviour
 	}
 
 
-    public void AdvanceEntryNode(string newEntryNode)
+	public void AdvanceEntryNode(string newEntryNode)
     {
         NPC.updateStartNode(newEntryNode);
 
@@ -51,6 +59,12 @@ public class YarnManager : MonoBehaviour
     public void Forage()
     {
         currentlyInteractingWith.GetComponent<Food>().Forage();
+    }
+    
+    private bool CheckInventory(string itemName)
+    {
+        //takes an itemName in from yarn, checks status in player inventory
+        return playerControl.checkIfHolding(itemName);
     }
 
     public void startingDialogue()
