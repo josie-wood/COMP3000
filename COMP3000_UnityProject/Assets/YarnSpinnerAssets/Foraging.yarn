@@ -60,7 +60,8 @@ title: garlic
         <<endif>>
 -> Walk Away
 ===
-title: dandelions
+
+title: dandelion
 ---
 
 <<if !$dandelion_id>>
