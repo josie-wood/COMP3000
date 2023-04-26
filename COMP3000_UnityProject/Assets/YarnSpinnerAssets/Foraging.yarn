@@ -14,16 +14,26 @@ A blackberry bush!
 
 title: chanterelle
 ---
-A cluster of golden yellow mushrooms!
+<<if !$chanterelle_id>>
+    A cluster of golden yellow mushrooms! 
+<<elseif $chanterelle_id>>
+A chanterelle mushroom! 
+<<endif>>
+
 -> Look up in field guide
+        <<set $chanterelle_id to true>>
         I found a match!
         'Chanterelle, or Cantharellus cibarius'
         'A yellow, funnel shaped mushroom found growing on the ground in woodland'
         'Tasty fried up in some butter'
-        -> Collect chanterelles <<if checkInventory("chanterelle") == false>>
-            <<forage>> 
-            <<jump foraged>>
+        <<if checkInventory("chanterelle") == false>>
+            -> Collect chanterelles 
+                <<forage>> 
+                <<jump foraged>>
+            -> Walk Away
+        <<endif>>
 -> Walk Away
+
 
 ===
 
@@ -56,12 +66,13 @@ title: foraged
 ---
 
 added to inventory
+<<stop>>
 ===
 
 title: alreadyForaged
 ---
 
-I already have some of these!
+I already have some of these to show Mouse!
 I'll leave the rest for others to find.
 
 ===

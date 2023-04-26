@@ -57,6 +57,9 @@ public class Food : Interactable
             // remove visual element from scene/replace art
             this.GetComponent<SpriteRenderer>().sprite = postForageSprite;
 
+            // turn off collider so can't interact with it anymore
+            this.GetComponent<Collider2D>().enabled = false;
+
             // run dialogue
             updateStartNode("alreadyForaged");
 		}
