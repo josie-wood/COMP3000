@@ -27,7 +27,7 @@ public class YarnManager : MonoBehaviour
         dialogueRunner.AddCommandHandler<string>
             (
             "advanceEntryNode",     // name of new yarn command
-            AdvanceEntryNode        //name of c# method to run
+            AdvanceEntryNode        // name of c# method to run
             );
 
 		//create Forage command
@@ -84,7 +84,6 @@ public class YarnManager : MonoBehaviour
 	public void AdvanceEntryNode(string newEntryNode)
     {
         NPC.updateStartNode(newEntryNode);
-
     }
 
     public void Forage()
