@@ -1225,7 +1225,7 @@ MonoBehaviour:
   NPC: {fileID: 1256391886}
   player: {fileID: 0}
   playerControl: {fileID: 0}
-  sceneManagement: {fileID: 0}
+  sceneManagement: {fileID: 2135121994}
   currentlyInteractingWith: {fileID: 0}
   forestEntrance: {fileID: 398712321}
 --- !u!4 &1104910802
@@ -2357,6 +2357,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4650399445918834858, guid: 6a397ec4bb59ab24f9ce0cf5705ea8f3, type: 3}
       propertyPath: m_Name
+      value: SceneManagement
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650399445918834858, guid: 6a397ec4bb59ab24f9ce0cf5705ea8f3, type: 3}
+      propertyPath: m_TagString
       value: SceneManagement
       objectReference: {fileID: 0}
     m_RemovedComponents: []
