@@ -13,6 +13,7 @@ public class YarnManager : MonoBehaviour
 	public Interactable NPC;
     public GameObject player;
     public PlayerController playerControl;
+	public SceneManagement sceneManagement;
 
     public GameObject currentlyInteractingWith;
 	private bool exploredWoods { get; set; }
@@ -72,12 +73,27 @@ public class YarnManager : MonoBehaviour
 		  CheckWalkIsGood       //name of c# method to run
 		  );
 
+		dialogueRunner.AddCommandHandler
+		 (
+			"showDiaryEntry",
+			showDiaryEntry
+		 ); 
+		
+		dialogueRunner.AddCommandHandler
+		 (
+			"loadEndCredits",
+			loadEndCredits
+		 );
+
 		//make endingDialogue listen to the dialoguerunner
 		dialogueRunner.onDialogueComplete.AddListener(endingDialogue);
 
         //get player
         player = GameObject.FindGameObjectWithTag("Player");
         playerControl = player.GetComponent<PlayerController>();
+
+		//get scene management
+		sceneManagement = GameObject.FindGameObjectWithTag("SceneManagement").GetComponent<SceneManagement>();
 	}
 
 
@@ -125,6 +141,17 @@ public class YarnManager : MonoBehaviour
 			return false;
 		}
 	}
+
+	private void showDiaryEntry()
+	{
+		//show the diary entry pop up 
+	}
+
+	private void loadEndCredits()
+	{
+		sceneManagement.loadEnd();
+	}
+
 	public void startingDialogue()
     {
 		//lock movement when talking to NPC
