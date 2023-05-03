@@ -14,41 +14,237 @@ A blackberry bush!
 
 title: chanterelle
 ---
-A cluster of golden yellow mushrooms!
+<<if !$chanterelle_id>>
+    A cluster of golden yellow mushrooms! 
+<<elseif $chanterelle_id>>
+A chanterelle mushroom! 
+<<endif>>
+
 -> Look up in field guide
+        <<set $chanterelle_id to true>>
         I found a match!
         'Chanterelle, or Cantharellus cibarius'
         'A yellow, funnel shaped mushroom found growing on the ground in woodland'
         'Tasty fried up in some butter'
-        -> Collect chanterelles <<if checkInventory("chanterelle") == false>>
-            <<forage>> 
-            <<jump foraged>>
+        <<if checkInventory("chanterelle") == false>>
+            -> Collect chanterelles 
+                <<forage>> 
+                <<jump foraged>>
+            -> Walk Away
+        <<endif>>
 -> Walk Away
+
 
 ===
 
 title: garlic
 ---
-A veritable ocean of garlicky-smelling leaves!
+
+<<if !$garlic_id>>
+    A veritable ocean of garlicky-smelling leaves! 
+<<elseif $garlic_id>>
+    A mass of Wild Garlic!
+<<endif>>
+
 -> Look up in field guide
+        <<set $garlic_id to true>>
         I found a match!
         'Wild garlic, also known as Ransoms, scientific name Allium ursinum'
         'Often found growing in large patches in the woods'
         'Pick the leaves without disrupting the bulbs, and use as you would spinach'
-        -> Gather garlic <<if checkInventory("garlic") == false>>
-            <<forage>> 
-            <<jump foraged>>
+        <<if checkInventory("garlic") == false>>
+            -> Gather garlic leaves 
+                <<forage>> 
+                <<jump foraged>>
+            -> Walk Away
+        <<endif>>
 -> Walk Away
 ===
-title: dandelions
+
+title: dandelion
 ---
-A fluffy yellow flower growing amongst the grass
+
+<<if !$dandelion_id>>
+    A fluffy yellow flower growing amongst the grass
+<<elseif $dandelion_id>>
+    A dandelion! 
+<<endif>>
+
 -> Look up in field guide
+        <<set $dandelion_id to true>>
         I found a match!
         'Dandelion, scientific name Taraxacum Officinale'
-        -> Pick some dandelions <<if checkInventory("garlic") == false>>
-            <<forage>> 
-            <<jump foraged>>
+        'Often found in lawns, found across all seven continents.'
+        'All parts of this plant are edible - try boiling down the flowers with sugar to make Dandelion Honey'
+        <<if checkInventory("dandelion") == false>>
+            -> Grab some dandelions 
+                <<forage>> 
+                <<jump foraged>>
+            -> Walk Away
+        <<endif>>
+-> Walk Away
+
+===
+
+title: nettle
+---
+<<if !$nettle_id>>
+    Ouch! Some stingy leaves
+<<elseif $nettle_id>>
+    Stinging Nettles!
+<<endif>>
+
+-> Look up in field guide
+        <<set $nettle_id to true>>
+        I found a match!
+        'Stinging Nettle, scientific name Urtica dioica'
+        'Found in a variety of environments from the countryside to urban areas'
+        'Grab some gloves to collect the leaves, cook them to remove the stings, and try making a nettle pesto'
+        <<if checkInventory("nettle") == false>>
+            -> Nab some nettles 
+                <<forage>> 
+                <<jump foraged>>
+            -> Walk Away
+        <<endif>>
+-> Walk Away
+===
+
+title: elderflower
+---
+<<if !$elderflower_id>>
+    Some sweet smelling white flowers
+<<elseif $elderflower_id>>
+    Elderflower!
+<<endif>>
+
+-> Look up in field guide
+        <<set $elderflower_id to true>>
+        I found a match!
+        'Elderflower, the flowering buds of the Elder tree, scientific name Sambucus nigra'
+        'Found in woods and at the roadside, flowering from May'
+        'Make your own elderflower cordial!'
+        <<if checkInventory("elderflower") == false>>
+            -> Collect some elderflower
+                <<forage>> 
+                <<jump foraged>>
+            -> Walk Away
+        <<endif>>
+-> Walk Away
+===
+
+title: chestnut
+---
+<<if !$chestnut_id>>
+    Looks like extra-spiky looking conkers?
+<<elseif $chestnut_id>>
+    Sweet Chestnut!
+<<endif>>
+
+-> Look up in field guide
+        <<set $chestnut_id to true>>
+        I found a match!
+        'Sweet Chestnut, the nuts of the Castanea sativa tree'
+        'Found in woodland in autumn'
+        'Be careful not to confuse with the poisionous Horse Chestnut, commonly known as conkers'
+        'Roast your own chestnuts on an open fire!'
+        <<if checkInventory("chestnut") == false>>
+            -> Collect some sweet chestnuts
+                <<forage>> 
+                <<jump foraged>>
+            -> Walk Away
+        <<endif>>
+-> Walk Away
+===
+
+title: strawberry
+---
+<<if !$strawberry_id>>
+    Teeny tiny strawberries?
+<<elseif $strawberry_id>>
+    Wild Strawberries!
+<<endif>>
+
+-> Look up in field guide
+        <<set $strawberry_id to true>>
+        I found a match!
+        'Wild Strawberry, Fragaria vesca'
+        'Found in woodland in summertime, but often over-collected so rare to find'
+        'Best eaten raw and fresh'
+        <<if checkInventory("strawberry") == false>>
+            -> Collect some wild strawberries
+                <<forage>> 
+                <<jump foraged>>
+            -> Walk Away
+        <<endif>>
+-> Walk Away
+===
+
+title: crabapple
+------
+<<if !$crabapple_id>>
+    Miniature apples?
+<<elseif $crabapple_id>>
+    Crabapples!
+<<endif>>
+
+-> Look up in field guide
+        <<set $crabapple_id to true>>
+        I found a match!
+        'Crabapple, fruit of the crabapple tree, scientific name Malus sylvestris'
+        'Fruits are ready late summer to autumn'
+        'Sour when eaten raw, but they make a lovely crabapple jam'
+        <<if checkInventory("crabapple") == false>>
+            -> Collect some crabapples
+                <<forage>> 
+                <<jump foraged>>
+            -> Walk Away
+        <<endif>>
+-> Walk Away
+===
+
+title: pine
+---
+<<if !$pine_id>>
+    Spikey tree with cones on the branches
+<<elseif $pine_id>>
+    A pine tree!
+<<endif>>
+
+-> Look up in field guide
+        <<set $pine_id to true>>
+        I found a match!
+        'Pine tree'
+        'Seeds and needles can be eaten'
+        'A pine needle tea is filled with vitamins to soothe a cold'
+        <<if checkInventory("pine") == false>>
+            -> Pick up some pine needles
+                <<forage>> 
+                <<jump foraged>>
+            -> Walk Away
+        <<endif>>
+-> Walk Away
+===
+
+title: gorse
+---
+<<if !$gorse_id>>
+    Spiky bushes with yellow flowers that smell... coconutty?
+<<elseif $gorse_id>>
+    Gorse!
+<<endif>>
+
+-> Look up in field guide
+        <<set $gorse_id to true>>
+        I found a match!
+        'Gorse, scientific name Ulex europaeus'
+        'Found in abundance in sunny heathland'
+        'Pick the flowers and use in salads, syrups, and teas'
+        <<if checkInventory("gorse") == false>>
+            -> Gather some Gorse flowers
+                <<forage>> 
+                <<jump foraged>>
+            -> Walk Away
+        <<endif>>
 -> Walk Away
 ===
 
@@ -56,12 +252,13 @@ title: foraged
 ---
 
 added to inventory
+<<stop>>
 ===
 
 title: alreadyForaged
 ---
 
-I already have some of these!
+I already have some of these to show Mouse!
 I'll leave the rest for others to find.
 
 ===
