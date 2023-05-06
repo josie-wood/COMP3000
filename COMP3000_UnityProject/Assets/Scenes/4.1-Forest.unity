@@ -192,7 +192,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 1019978100}
+  m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -218,7 +218,7 @@ RectTransform:
   - {fileID: 454517966}
   - {fileID: 116541920}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -298,171 +298,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 116541919}
   m_CullTransparentMesh: 1
---- !u!1 &151527688
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 151527694}
-  - component: {fileID: 151527693}
-  - component: {fileID: 151527692}
-  - component: {fileID: 151527691}
-  - component: {fileID: 151527690}
-  - component: {fileID: 151527689}
-  m_Layer: 0
-  m_Name: Player
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!70 &151527689
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151527688}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 2.4, y: 3.6}
-  m_Direction: 0
---- !u!95 &151527690
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151527688}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 83589c994e4ff3342842d11a6c7fd302, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &151527691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151527688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e49ce5bd1d770d54a8ab31240f9b43ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 10
-  playerRB: {fileID: 0}
-  currentPos: {x: 0, y: 0}
-  playerAnim: {fileID: 0}
-  playerSprite: {fileID: 0}
-  movementLocked: 0
-  inventory: []
---- !u!50 &151527692
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151527688}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!212 &151527693
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151527688}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a90a75cfcc1e53d4c8bc931a7378026b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &151527694
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151527688}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.1, y: 3.51, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1019978101}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &167920552
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,8 +437,8 @@ MonoBehaviour:
   startNode: chanterelle
   yarnManager: {fileID: 1104261617}
   foodName: chanterelle
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 96e8e913c74487a46b2c9e67a322af13, type: 3}
   dialogueRunner: {fileID: 1211438754}
 --- !u!212 &186369923
@@ -672,7 +507,7 @@ Transform:
   m_Children:
   - {fileID: 167920554}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &247335093
 GameObject:
@@ -881,7 +716,7 @@ Transform:
   m_Children:
   - {fileID: 1696817011}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &294674471
 PrefabInstance:
@@ -928,7 +763,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3686414919136309402, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3686414919136309402, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1250,8 +1085,8 @@ MonoBehaviour:
   startNode: nettle
   yarnManager: {fileID: 1104261617}
   foodName: nettle
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 96e8e913c74487a46b2c9e67a322af13, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &343301672
@@ -1320,7 +1155,7 @@ Transform:
   m_Children:
   - {fileID: 2115487123}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &359731316
 GameObject:
@@ -1678,8 +1513,8 @@ MonoBehaviour:
   startNode: strawberry
   yarnManager: {fileID: 1104261617}
   foodName: strawberry
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 96e8e913c74487a46b2c9e67a322af13, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &494703469
@@ -1748,7 +1583,7 @@ Transform:
   m_Children:
   - {fileID: 821266627}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &530930901
 GameObject:
@@ -1889,8 +1724,8 @@ MonoBehaviour:
   startNode: pine
   yarnManager: {fileID: 1104261617}
   foodName: pine
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 96e8e913c74487a46b2c9e67a322af13, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &745193949
@@ -1959,7 +1794,7 @@ Transform:
   m_Children:
   - {fileID: 1419812960}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &821266625
 GameObject:
@@ -2140,124 +1975,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddcdd604a328c4ab296f048eb7b3a925, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1019978098
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1019978101}
-  - component: {fileID: 1019978100}
-  - component: {fileID: 1019978099}
-  - component: {fileID: 1019978102}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &1019978099
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019978098}
-  m_Enabled: 0
---- !u!20 &1019978100
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019978098}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 1
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &1019978101
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019978098}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.7699995, y: 1.3300002, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 151527694}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1019978102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019978098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
 --- !u!1 &1103660532
 GameObject:
   m_ObjectHideFlags: 0
@@ -2313,8 +2030,8 @@ MonoBehaviour:
   startNode: chestnut
   yarnManager: {fileID: 1104261617}
   foodName: chestnut
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 96e8e913c74487a46b2c9e67a322af13, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1103660535
@@ -2383,7 +2100,7 @@ Transform:
   m_Children:
   - {fileID: 863226432}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1104261616
 GameObject:
@@ -2434,7 +2151,38 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1176003496
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1176003497}
+  m_Layer: 0
+  m_Name: PlayerLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1176003497
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176003496}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 22.1, y: 3.51, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1195449441
 GameObject:
@@ -2606,8 +2354,8 @@ MonoBehaviour:
   startNode: garlic
   yarnManager: {fileID: 1104261617}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 96e8e913c74487a46b2c9e67a322af13, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1214941202
@@ -2676,7 +2424,7 @@ Transform:
   m_Children:
   - {fileID: 247335095}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1215351423
 GameObject:
@@ -2851,8 +2599,8 @@ MonoBehaviour:
   startNode: elderflower
   yarnManager: {fileID: 1104261617}
   foodName: elderflower
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 96e8e913c74487a46b2c9e67a322af13, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1231927710
@@ -2921,7 +2669,7 @@ Transform:
   m_Children:
   - {fileID: 404636346}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1334799519
 PrefabInstance:
@@ -2932,7 +2680,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4650399445918834856, guid: 6a397ec4bb59ab24f9ce0cf5705ea8f3, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4650399445918834856, guid: 6a397ec4bb59ab24f9ce0cf5705ea8f3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2978,6 +2726,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneManagement
       objectReference: {fileID: 0}
+    - target: {fileID: 4650399445918834859, guid: 6a397ec4bb59ab24f9ce0cf5705ea8f3, type: 3}
+      propertyPath: playerSpawnLocation
+      value: 
+      objectReference: {fileID: 1176003497}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a397ec4bb59ab24f9ce0cf5705ea8f3, type: 3}
 --- !u!1 &1352994627
@@ -6601,7 +6353,7 @@ PrefabInstance:
     - target: {fileID: 7371614435247147791, guid: d6390a19cdedf6543803ca0674e37356, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 151527688}
+      objectReference: {fileID: 0}
     - target: {fileID: 7371614435247147791, guid: d6390a19cdedf6543803ca0674e37356, type: 3}
       propertyPath: colTile
       value: 
@@ -6915,8 +6667,8 @@ MonoBehaviour:
   startNode: crabapple
   yarnManager: {fileID: 1104261617}
   foodName: crabapple
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 96e8e913c74487a46b2c9e67a322af13, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1859779478
@@ -6985,7 +6737,7 @@ Transform:
   m_Children:
   - {fileID: 491481918}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1889110100
 GameObject:
@@ -7042,8 +6794,8 @@ MonoBehaviour:
   startNode: dandelion
   yarnManager: {fileID: 1104261617}
   foodName: dandelion
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 96e8e913c74487a46b2c9e67a322af13, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1889110103
@@ -7112,7 +6864,7 @@ Transform:
   m_Children:
   - {fileID: 530930903}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1900667204
 GameObject:
@@ -7169,8 +6921,8 @@ MonoBehaviour:
   startNode: gorse
   yarnManager: {fileID: 1104261617}
   foodName: gorse
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 96e8e913c74487a46b2c9e67a322af13, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1900667207
@@ -7239,7 +6991,7 @@ Transform:
   m_Children:
   - {fileID: 1775166408}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1907357545
 GameObject:
