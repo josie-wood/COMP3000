@@ -18,8 +18,13 @@ public class PlayerController : MonoBehaviour
 
     public List<string> inventory = new List<string>();
 
-    // Start is called before the first frame update
-    void Start()
+	private void Awake()
+	{
+		DontDestroyOnLoad(gameObject);
+	}
+
+	// Start is called before the first frame update
+	void Start()
     {
         playerRB= GetComponent<Rigidbody2D>();
         currentPos = GetComponent<Transform>().position;
