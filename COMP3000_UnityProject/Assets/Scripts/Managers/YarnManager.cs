@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using Yarn.Unity;
 
@@ -152,10 +153,15 @@ public class YarnManager : MonoBehaviour
 		sceneManagement.loadEnd();
 	}
 
-	public void startingDialogue()
+	public void startingDialogue(string startNode)
     {
 		//lock movement when talking to NPC
 		playerControl.lockMovement();
+
+
+		// play node
+		Debug.Log("trying to start the dialogue now");
+		dialogueRunner.StartDialogue(startNode);
 	}
 
     public void endingDialogue()
@@ -172,4 +178,8 @@ public class YarnManager : MonoBehaviour
         currentlyInteractingWith= newInteractable;
     }
 
+	public bool IsDialogueRunning()
+	{
+		return dialogueRunner.IsDialogueRunning;
+	}
 }

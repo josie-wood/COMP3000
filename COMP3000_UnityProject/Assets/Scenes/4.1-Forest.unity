@@ -2726,6 +2726,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneManagement
       objectReference: {fileID: 0}
+    - target: {fileID: 4650399445918834858, guid: 6a397ec4bb59ab24f9ce0cf5705ea8f3, type: 3}
+      propertyPath: m_TagString
+      value: SceneManagement
+      objectReference: {fileID: 0}
     - target: {fileID: 4650399445918834859, guid: 6a397ec4bb59ab24f9ce0cf5705ea8f3, type: 3}
       propertyPath: playerSpawnLocation
       value: 

@@ -655,7 +655,7 @@ MonoBehaviour:
   yarnManager: {fileID: 1104910801}
   scenePointedTo: 4.1-Forest
   sceneManagement: {fileID: 2135121994}
-  areaAccessible: 0
+  areaAccessible: 1
 --- !u!212 &398712322
 SpriteRenderer:
   m_ObjectHideFlags: 0
