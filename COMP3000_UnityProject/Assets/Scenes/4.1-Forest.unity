@@ -188,16 +188,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 33731909}
   uiPrompt: {fileID: 1792770543}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: chanterelle
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: chanterelle
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 8ddc65773911831409e92fff43b96bf8, type: 3}
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
 --- !u!212 &33731911
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -319,7 +319,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 1019978100}
+  m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -345,7 +345,7 @@ RectTransform:
   - {fileID: 454517966}
   - {fileID: 116541920}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -417,14 +417,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 46567202}
   uiPrompt: {fileID: 1930140096}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &46567204
@@ -544,14 +544,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 70309222}
   uiPrompt: {fileID: 1068625503}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &70309224
@@ -671,14 +671,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 82847568}
   uiPrompt: {fileID: 1658201330}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &82847570
@@ -798,14 +798,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 83370805}
   uiPrompt: {fileID: 100355008}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &83370807
@@ -1093,16 +1093,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 105430365}
   uiPrompt: {fileID: 1685111688}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: chanterelle
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: chanterelle
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 8ddc65773911831409e92fff43b96bf8, type: 3}
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
 --- !u!212 &105430367
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1304,14 +1304,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 114965606}
   uiPrompt: {fileID: 2082493520}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &114965608
@@ -1509,14 +1509,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 142495689}
   uiPrompt: {fileID: 1298575835}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &142495691
@@ -1571,171 +1571,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &151527688
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 151527694}
-  - component: {fileID: 151527693}
-  - component: {fileID: 151527692}
-  - component: {fileID: 151527691}
-  - component: {fileID: 151527690}
-  - component: {fileID: 151527689}
-  m_Layer: 0
-  m_Name: Player
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!70 &151527689
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151527688}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 2.4, y: 3.6}
-  m_Direction: 0
---- !u!95 &151527690
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151527688}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 83589c994e4ff3342842d11a6c7fd302, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &151527691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151527688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e49ce5bd1d770d54a8ab31240f9b43ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 10
-  playerRB: {fileID: 0}
-  currentPos: {x: 0, y: 0}
-  playerAnim: {fileID: 0}
-  playerSprite: {fileID: 0}
-  movementLocked: 0
-  inventory: []
---- !u!50 &151527692
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151527688}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!212 &151527693
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151527688}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a90a75cfcc1e53d4c8bc931a7378026b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &151527694
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151527688}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 42.86, y: 14.34, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1019978101}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &167920552
 GameObject:
   m_ObjectHideFlags: 0
@@ -1963,16 +1798,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 186369921}
   uiPrompt: {fileID: 167920552}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: chanterelle
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: chanterelle
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 8ddc65773911831409e92fff43b96bf8, type: 3}
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
 --- !u!212 &186369923
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2274,16 +2109,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 241012967}
   uiPrompt: {fileID: 1458318813}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: chanterelle
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: chanterelle
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 8ddc65773911831409e92fff43b96bf8, type: 3}
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
 --- !u!212 &241012969
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2401,14 +2236,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 243886732}
   uiPrompt: {fileID: 2131617527}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &243886734
@@ -2596,11 +2431,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 269172093}
   uiPrompt: {fileID: 1696817009}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: 
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   scenePointedTo: 4-GameplayScene
   sceneManagement: {fileID: 360174777}
   areaAccessible: 1
@@ -2670,7 +2505,7 @@ Transform:
   m_Children:
   - {fileID: 1696817011}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &277871206
 GameObject:
@@ -2737,14 +2572,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 277871208}
   uiPrompt: {fileID: 856804496}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &277871210
@@ -2883,231 +2718,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &294674471
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3362060261409852057, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: startAutomatically
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3362060261409852057, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: runSelectedOptionAsLine
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3653584866868415269, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3653584867078533838, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6892f66172bfe8d409231a81cece573a, type: 3}
-    - target: {fileID: 3653584867367298902, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3653584867367298902, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3653584867367298902, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3653584867367298902, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3653584867367298902, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3653584867367298902, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3686414919136309402, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3686414919136309402, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3686414919136309402, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3686414919136309402, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3686414919136309402, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3686414919136309402, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3686414919136309402, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3686414919136309402, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3686414919136309402, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3686414919136309402, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3686414919136309402, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4121586724569924324, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_Name
-      value: Dialogue System Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213010498666184, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213010825467260, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213010825467260, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213010825467260, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213010825467260, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213010825467260, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213010825467260, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213010891032620, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6892f66172bfe8d409231a81cece573a, type: 3}
-    - target: {fileID: 8428213010891032620, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213010891032620, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_Color.b
-      value: 0.1792453
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213010891032620, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_Color.g
-      value: 0.1792453
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213010891032620, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_Color.r
-      value: 0.1792453
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213010899780328, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213010899780328, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213011228484149, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213011228484149, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213011228484149, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213011228484149, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213011228484149, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213011228484149, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213011785165503, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213011785165503, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213011785165503, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213011785165503, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213011785165503, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213011785165503, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213012250922270, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213012250922270, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213012250922270, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213012250922270, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213012250922270, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213012250922270, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
 --- !u!1 &315535402
 GameObject:
   m_ObjectHideFlags: 0
@@ -3275,7 +2885,7 @@ Transform:
   - {fileID: 1065388917}
   - {fileID: 459697336}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &324652975
 GameObject:
@@ -3442,14 +3052,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 343301670}
   uiPrompt: {fileID: 2115487121}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: nettle
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: nettle
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 96e8e913c74487a46b2c9e67a322af13, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &343301672
@@ -3518,7 +3128,7 @@ Transform:
   m_Children:
   - {fileID: 2115487123}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &350653422
 PrefabInstance:
@@ -3904,14 +3514,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 404629159}
   uiPrompt: {fileID: 797709629}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &404629161
@@ -4288,14 +3898,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 431837687}
   uiPrompt: {fileID: 1989073288}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &431837689
@@ -4553,14 +4163,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 466836008}
   uiPrompt: {fileID: 1892315471}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &466836010
@@ -4745,14 +4355,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 494703467}
   uiPrompt: {fileID: 821266625}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: strawberry
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: strawberry
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 96e8e913c74487a46b2c9e67a322af13, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &494703469
@@ -4821,7 +4431,7 @@ Transform:
   m_Children:
   - {fileID: 821266627}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &497216913
 GameObject:
@@ -4888,14 +4498,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 497216915}
   uiPrompt: {fileID: 1246544288}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &497216917
@@ -5015,14 +4625,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 501058599}
   uiPrompt: {fileID: 354450994}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &501058601
@@ -5396,14 +5006,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 628109700}
   uiPrompt: {fileID: 1136303192}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &628109702
@@ -5516,7 +5126,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 643c389476cc38d46b7e21f4e483bfa5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5541,7 +5151,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &628736835
 PolygonCollider2D:
@@ -8101,14 +7711,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 639112775}
   uiPrompt: {fileID: 642669003}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &639112777
@@ -8481,14 +8091,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 720996139}
   uiPrompt: {fileID: 630375241}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &720996141
@@ -8608,14 +8218,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 742294502}
   uiPrompt: {fileID: 1763365967}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &742294504
@@ -8719,14 +8329,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 745193947}
   uiPrompt: {fileID: 1419812958}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: pine
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: pine
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 96e8e913c74487a46b2c9e67a322af13, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &745193949
@@ -8795,7 +8405,7 @@ Transform:
   m_Children:
   - {fileID: 1419812960}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &766861490 stripped
 Transform:
@@ -8867,14 +8477,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 780391639}
   uiPrompt: {fileID: 422886295}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &780391641
@@ -9517,17 +9127,6 @@ Transform:
   m_Father: {fileID: 1103660536}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &868361202 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8428213010498666189, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-  m_PrefabInstance: {fileID: 294674471}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddcdd604a328c4ab296f048eb7b3a925, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &868713574
 GameObject:
   m_ObjectHideFlags: 0
@@ -9593,14 +9192,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 868713576}
   uiPrompt: {fileID: 1082546042}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &868713578
@@ -9720,14 +9319,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 875594148}
   uiPrompt: {fileID: 908716534}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &875594150
@@ -9936,14 +9535,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 881590073}
   uiPrompt: {fileID: 826565638}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &881590075
@@ -10152,14 +9751,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 912272394}
   uiPrompt: {fileID: 1353491046}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &912272396
@@ -10426,7 +10025,7 @@ Transform:
   - {fileID: 1647169238}
   - {fileID: 2114357299}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1005854975
 GameObject:
@@ -10493,14 +10092,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1005854977}
   uiPrompt: {fileID: 1558695765}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1005854979
@@ -10639,124 +10238,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1019978098
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1019978101}
-  - component: {fileID: 1019978100}
-  - component: {fileID: 1019978099}
-  - component: {fileID: 1019978102}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &1019978099
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019978098}
-  m_Enabled: 0
---- !u!20 &1019978100
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019978098}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 1
-  orthographic size: 7
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &1019978101
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019978098}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.7699995, y: 1.3300002, z: -11.15}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 151527694}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1019978102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019978098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
 --- !u!1 &1020291888
 GameObject:
   m_ObjectHideFlags: 0
@@ -10822,14 +10303,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1020291890}
   uiPrompt: {fileID: 641287376}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1020291892
@@ -11038,14 +10519,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1078232165}
   uiPrompt: {fileID: 1010271696}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1078232167
@@ -11317,14 +10798,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1103660533}
   uiPrompt: {fileID: 863226430}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: chestnut
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: chestnut
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 96e8e913c74487a46b2c9e67a322af13, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1103660535
@@ -11393,58 +10874,7 @@ Transform:
   m_Children:
   - {fileID: 863226432}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1104261616
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1104261618}
-  - component: {fileID: 1104261617}
-  m_Layer: 0
-  m_Name: YarnManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1104261617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104261616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c7b51c3e450aa148a6c154da0b21a3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueRunner: {fileID: 1211438754}
-  NPC: {fileID: 0}
-  player: {fileID: 0}
-  playerControl: {fileID: 0}
-  sceneManagement: {fileID: 0}
-  currentlyInteractingWith: {fileID: 0}
-  forestEntrance: {fileID: 0}
---- !u!4 &1104261618
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104261616}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.44930613, y: 0.12544121, z: -9.798341}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1126774369
 PrefabInstance:
@@ -11676,14 +11106,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1145480812}
   uiPrompt: {fileID: 561798217}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1145480814
@@ -11808,14 +11238,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1161621544}
   uiPrompt: {fileID: 1974056762}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1161621546
@@ -11935,14 +11365,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1185842130}
   uiPrompt: {fileID: 1651917373}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1185842132
@@ -12081,37 +11511,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1211438753 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4121586724569924324, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-  m_PrefabInstance: {fileID: 294674471}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1211438754 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3362060261409852057, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-  m_PrefabInstance: {fileID: 294674471}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1211438753}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1211438757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1211438753}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 097b95c9f69f04f2d8c08a817e7786af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueView: {fileID: 868361202}
-  continueActionType: 1
-  continueActionKeyCode: 32
 --- !u!1 &1214941199
 GameObject:
   m_ObjectHideFlags: 0
@@ -12161,14 +11560,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1214941200}
   uiPrompt: {fileID: 247335093}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1214941202
@@ -12406,14 +11805,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1231927708}
   uiPrompt: {fileID: 404636344}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: elderflower
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: elderflower
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 96e8e913c74487a46b2c9e67a322af13, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1231927710
@@ -12482,7 +11881,7 @@ Transform:
   m_Children:
   - {fileID: 404636346}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1238902182
 GameObject:
@@ -12549,14 +11948,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1238902184}
   uiPrompt: {fileID: 393066740}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1238902186
@@ -12676,14 +12075,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1241339283}
   uiPrompt: {fileID: 293918182}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1241339285
@@ -12887,14 +12286,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1262938430}
   uiPrompt: {fileID: 1692940538}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1262938432
@@ -13014,14 +12413,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1264953638}
   uiPrompt: {fileID: 1769658861}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1264953640
@@ -13169,7 +12568,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4650399445918834856, guid: 6a397ec4bb59ab24f9ce0cf5705ea8f3, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4650399445918834856, guid: 6a397ec4bb59ab24f9ce0cf5705ea8f3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13215,6 +12614,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneManagement
       objectReference: {fileID: 0}
+    - target: {fileID: 4650399445918834858, guid: 6a397ec4bb59ab24f9ce0cf5705ea8f3, type: 3}
+      propertyPath: m_TagString
+      value: SceneManagement
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650399445918834859, guid: 6a397ec4bb59ab24f9ce0cf5705ea8f3, type: 3}
+      propertyPath: playerSpawnLocation
+      value: 
+      objectReference: {fileID: 2001246714}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a397ec4bb59ab24f9ce0cf5705ea8f3, type: 3}
 --- !u!1 &1334805801
@@ -13282,16 +12689,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1334805803}
   uiPrompt: {fileID: 2143484886}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: chanterelle
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: chanterelle
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 8ddc65773911831409e92fff43b96bf8, type: 3}
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
 --- !u!212 &1334805805
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16884,14 +16291,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1366109471}
   uiPrompt: {fileID: 1830190187}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1366109473
@@ -17011,14 +16418,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1372763276}
   uiPrompt: {fileID: 1914713730}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1372763278
@@ -17309,16 +16716,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1397067514}
   uiPrompt: {fileID: 1825432151}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: chanterelle
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: chanterelle
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 8ddc65773911831409e92fff43b96bf8, type: 3}
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
 --- !u!212 &1397067516
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17685,14 +17092,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1465742177}
   uiPrompt: {fileID: 861834955}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1465742179
@@ -17982,16 +17389,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1530290417}
   uiPrompt: {fileID: 416785611}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: chanterelle
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: chanterelle
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 8ddc65773911831409e92fff43b96bf8, type: 3}
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
 --- !u!212 &1530290419
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18198,14 +17605,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1565314781}
   uiPrompt: {fileID: 1652203599}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1565314783
@@ -18505,14 +17912,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1650867470}
   uiPrompt: {fileID: 1515972255}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1650867472
@@ -18800,14 +18207,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1656511820}
   uiPrompt: {fileID: 836864039}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1656511822
@@ -19268,14 +18675,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1699527351}
   uiPrompt: {fileID: 207356879}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1699527353
@@ -19477,7 +18884,7 @@ PrefabInstance:
     - target: {fileID: 7371614435247147791, guid: d6390a19cdedf6543803ca0674e37356, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 151527688}
+      objectReference: {fileID: 0}
     - target: {fileID: 7371614435247147791, guid: d6390a19cdedf6543803ca0674e37356, type: 3}
       propertyPath: colTile
       value: 
@@ -20368,14 +19775,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1859779476}
   uiPrompt: {fileID: 315535402}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: crabapple
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: crabapple
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: f8f2c528ab301ad41ae5fd2f12f3dc8f, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1859779478
@@ -20448,7 +19855,7 @@ Transform:
   - {fileID: 1487159410}
   - {fileID: 1689756983}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &1859779480
 CapsuleCollider2D:
@@ -20615,14 +20022,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1861300408}
   uiPrompt: {fileID: 1860744908}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1861300410
@@ -20828,14 +20235,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1878053154}
   uiPrompt: {fileID: 112387165}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1878053156
@@ -20939,14 +20346,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1889110101}
   uiPrompt: {fileID: 530930901}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: dandelion
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: dandelion
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 96e8e913c74487a46b2c9e67a322af13, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1889110103
@@ -21015,7 +20422,7 @@ Transform:
   m_Children:
   - {fileID: 530930903}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1892315471
 GameObject:
@@ -21150,14 +20557,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1900667205}
   uiPrompt: {fileID: 1775166406}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: gorse
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: gorse
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 96e8e913c74487a46b2c9e67a322af13, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1900667207
@@ -21226,7 +20633,7 @@ Transform:
   m_Children:
   - {fileID: 1775166408}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1907357545
 GameObject:
@@ -21261,7 +20668,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 0}
   uiPrompt: {fileID: 1816176677}
-  interactKey: 
+  interactKey: 0
   withinRange: 0
   dialogueRunner: {fileID: 0}
   startNode: IntroduceMouse
@@ -21672,14 +21079,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1975077008}
   uiPrompt: {fileID: 223204002}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &1975077010
@@ -21818,6 +21225,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2001246713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2001246714}
+  m_Layer: 0
+  m_Name: PlayerSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2001246714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001246713}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 42.93, y: 16.56, z: 8.702753}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2006079933
 GameObject:
   m_ObjectHideFlags: 0
@@ -21883,14 +21321,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 2006079935}
   uiPrompt: {fileID: 1092317489}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &2006079937
@@ -22121,16 +21559,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 2061059229}
   uiPrompt: {fileID: 93599903}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: chanterelle
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: chanterelle
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 8ddc65773911831409e92fff43b96bf8, type: 3}
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
 --- !u!212 &2061059231
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22332,14 +21770,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 2091943828}
   uiPrompt: {fileID: 948044524}
-  interactKey: space
+  interactKey: 101
   withinRange: 0
-  dialogueRunner: {fileID: 1211438754}
+  dialogueRunner: {fileID: 0}
   startNode: garlic
-  yarnManager: {fileID: 1104261617}
+  yarnManager: {fileID: 0}
   foodName: garlic
-  player: {fileID: 151527688}
-  playerController: {fileID: 151527691}
+  player: {fileID: 0}
+  playerController: {fileID: 0}
   postForageSprite: {fileID: 21300000, guid: 2159b031e03b2f6488c51e0f51b6c2e4, type: 3}
   dialogueRunner: {fileID: 0}
 --- !u!212 &2091943830

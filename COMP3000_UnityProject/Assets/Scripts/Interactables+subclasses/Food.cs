@@ -25,7 +25,7 @@ public class Food : Interactable
 	{
 		if (withinRange)
 		{
-			if (Input.GetKeyUp("space"))
+			if (Input.GetKeyUp(interactKey))
 				if (!yarnManager.IsDialogueRunning())
 				{
 					Debug.Log("interactionKeyPressed " + interactKey);

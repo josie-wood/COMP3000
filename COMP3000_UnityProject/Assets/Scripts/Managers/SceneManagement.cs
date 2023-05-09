@@ -6,10 +6,17 @@ public class SceneManagement : MonoBehaviour
 {
     public Transform playerSpawnLocation;
 	public GameObject player;
+    public YarnManager yarnManager;
 
     // Start is called before the first frame update
     void Start()
     {
+        yarnManager = FindObjectOfType<YarnManager>();
+        if (yarnManager)
+        {
+            yarnManager.OnSceneLoaded();
+        }
+
         if (!player)
         {
             player = GameObject.FindGameObjectWithTag("Player");
@@ -18,6 +25,7 @@ public class SceneManagement : MonoBehaviour
 		if (playerSpawnLocation && player)
         {
             player.transform.position = playerSpawnLocation.position;
+            player.GetComponent<PlayerController>().unlockMovement();
         }
     }
 
@@ -42,6 +50,7 @@ public class SceneManagement : MonoBehaviour
     public void loadMenu()
     {
         Destroy(player);
+        Destroy(yarnManager);
         SceneManager.LoadScene("2-MainMenuScene");
 		Debug.Log("test debug");
 	}
@@ -49,7 +58,8 @@ public class SceneManagement : MonoBehaviour
     public void loadSettings()
     {
         Destroy(player);
-        SceneManager.LoadScene("3-SettingsScene");
+		Destroy(yarnManager);
+		SceneManager.LoadScene("3-SettingsScene");
 	}
 
 	public void loadGameplay()
@@ -60,12 +70,14 @@ public class SceneManagement : MonoBehaviour
     public void loadEnd()
     {
 		Destroy(player);
-        SceneManager.LoadScene("5-EndScene");
+		Destroy(yarnManager);
+		SceneManager.LoadScene("5-EndScene");
 	}
 
 	public void closeApplication()
     {
 		Destroy(player);
-        Application.Quit();
+		Destroy(yarnManager);
+		Application.Quit();
     }
 }

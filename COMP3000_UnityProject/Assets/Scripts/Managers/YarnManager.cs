@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Yarn.Unity;
 
 /// <summary>
@@ -17,12 +18,13 @@ public class YarnManager : MonoBehaviour
 	public SceneManagement sceneManagement;
 
     public GameObject currentlyInteractingWith;
-	private bool exploredWoods { get; set; }
+	public bool canExploreWoods { get; private set; }
 
 	public AreaEntrance forestEntrance;
 
 	public void Awake()
 	{
+		DontDestroyOnLoad(gameObject);
         //create new commands here
 
         //create advance entry node command
@@ -92,11 +94,21 @@ public class YarnManager : MonoBehaviour
         //get player
         player = GameObject.FindGameObjectWithTag("Player");
         playerControl = player.GetComponent<PlayerController>();
-
-		//get scene management
-		sceneManagement = GameObject.FindGameObjectWithTag("SceneManagement").GetComponent<SceneManagement>();
 	}
 
+	public void OnSceneLoaded()
+	{
+		//get scene management
+		sceneManagement = GameObject.FindGameObjectWithTag("SceneManagement").GetComponent<SceneManagement>();
+
+		forestEntrance = FindObjectOfType<AreaEntrance>();
+
+		GameObject mouse = GameObject.Find("Mouse");
+		if (mouse)
+		{
+			NPC = mouse.GetComponent<Interactable>();
+		}
+	}
 
 	public void AdvanceEntryNode(string newEntryNode)
     {
@@ -122,11 +134,12 @@ public class YarnManager : MonoBehaviour
 	private void UnlockWoods()
 	{
 		forestEntrance.setAreaAccessibility(true);
+		canExploreWoods = true;
 	}
 
 	private bool CheckExploredWoods()
 	{
-		return exploredWoods;
+		return canExploreWoods;
 	}
 
 	private bool CheckWalkIsGood() 

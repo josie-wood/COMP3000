@@ -10,25 +10,24 @@ public class Interactable : MonoBehaviour
 
     public Collider2D range;
     public GameObject uiPrompt;
-	public string interactKey;
+	public KeyCode interactKey;
 	public bool withinRange;
 	public DialogueRunner dialogueRunner;
 	public string startNode;
 	public YarnManager yarnManager;
 
-	private void Start()
+	private void Awake()
 	{
-		if(interactKey == "")
-		{
-			interactKey = "space";
-		}
-
+		yarnManager = GameObject.FindGameObjectWithTag("YarnManager").GetComponent<YarnManager>();
+		dialogueRunner = yarnManager.dialogueRunner;
 	}
+
+
 	private void Update()
 	{
 		if (withinRange)
 		{
-			if (Input.GetKeyUp("space") )
+			if (Input.GetKeyUp(interactKey))
 			{
 				if(!yarnManager.IsDialogueRunning())
 				{

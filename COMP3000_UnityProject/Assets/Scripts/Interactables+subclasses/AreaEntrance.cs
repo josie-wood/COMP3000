@@ -7,23 +7,22 @@ public class AreaEntrance : Interactable
     public string scenePointedTo;
     public SceneManagement sceneManagement;
     public bool areaAccessible;
-    // Start is called before the first frame update
 
-    void Start()
-    {
+	private void Start()
+	{
+        areaAccessible = yarnManager.canExploreWoods;
+	}
 
-    }
-
-    // Update is called once per frame
-    void Update()
+	// Update is called once per frame
+	void Update()
     {
 		if (withinRange)
 		{
-			if (Input.GetKeyUp("space") && areaAccessible)
+			if (Input.GetKeyUp(interactKey) && areaAccessible)
 			{
-                goToNewArea();
+				goToNewArea();
 			}
-            else if (Input.GetKeyUp("space") && !areaAccessible)
+            else if (Input.GetKeyUp(interactKey) && !areaAccessible)
             {
                 Debug.Log("area is locked");
             }
