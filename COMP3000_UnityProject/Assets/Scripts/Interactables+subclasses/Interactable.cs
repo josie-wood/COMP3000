@@ -34,7 +34,7 @@ public class Interactable : MonoBehaviour
 				{
 					Debug.Log("interactionKeyPressed " + interactKey);
 
-					yarnManager.startingDialogue(startNode);
+					yarnManager.startingDialogueMouse();
 				}
 			}
 		}
@@ -78,10 +78,7 @@ public class Interactable : MonoBehaviour
 		
 	}
 
-	public void updateStartNode(string newNode)
-	{
-		startNode= newNode;
-	}
+	
 
 	public void updateUIPrompt()
 	{

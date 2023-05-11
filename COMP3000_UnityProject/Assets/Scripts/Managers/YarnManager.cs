@@ -16,6 +16,9 @@ public class YarnManager : MonoBehaviour
     public GameObject player;
     public PlayerController playerControl;
 	public SceneManagement sceneManagement;
+	public string startNode;
+	public bool metMouse;
+
 
     public GameObject currentlyInteractingWith;
 	public bool canExploreWoods { get; private set; }
@@ -115,11 +118,17 @@ public class YarnManager : MonoBehaviour
 		{
 			NPC = mouse.GetComponent<Interactable>();
 		}
+		if(metMouse) { meetMouse(); }
+	}
+
+	public void updateStartNode(string newNode)
+	{
+		startNode = newNode;
 	}
 
 	public void AdvanceEntryNode(string newEntryNode)
     {
-        NPC.updateStartNode(newEntryNode);
+        updateStartNode(newEntryNode);
     }
 
 	public void meetMouse()
@@ -137,8 +146,13 @@ public class YarnManager : MonoBehaviour
 
 			mouseArt.GetComponent<SpriteRenderer>().enabled = true;
 			GameObject.FindGameObjectWithTag("Mouse").GetComponent<Interactable>().updateUIPrompt();
-			mouseArt.GetComponentInChildren<SpriteRenderer>().enabled=true;
+			if(!metMouse)
+			{
+				mouseArt.GetComponentInChildren<SpriteRenderer>().enabled = true;
+			}
 		}
+
+		metMouse = true;
 	}
 
     public void Forage()
@@ -197,7 +211,7 @@ public class YarnManager : MonoBehaviour
 		sceneManagement.loadEnd();
 	}
 
-	public void startingDialogue(string startNode)
+	public void startingDialogueMouse()
     {
 		//lock movement when talking to NPC
 		playerControl.lockMovement();
@@ -206,6 +220,17 @@ public class YarnManager : MonoBehaviour
 		// play node
 		Debug.Log("trying to start the dialogue now");
 		dialogueRunner.StartDialogue(startNode);
+	}
+
+	public void startingDialogueItem(string itemName)
+	{
+		//lock movement when talking to NPC
+		playerControl.lockMovement();
+
+
+		// play node
+		Debug.Log("trying to start the dialogue now");
+		dialogueRunner.StartDialogue(itemName);
 	}
 
     public void endingDialogue()
