@@ -7,6 +7,7 @@ TagManager:
   - SceneManagement
   - YarnManager
   - StationaryCamera
+  - forestEntrance
   layers:
   - Default
   - TransparentFX

@@ -19,6 +19,7 @@ public class YarnManager : MonoBehaviour
 
     public GameObject currentlyInteractingWith;
 	public bool canExploreWoods { get; private set; }
+	public GameObject woodsEntranceUI;
 
 	public AreaEntrance forestEntrance;
 
@@ -134,6 +135,11 @@ public class YarnManager : MonoBehaviour
 	private void UnlockWoods()
 	{
 		forestEntrance.setAreaAccessibility(true);
+		if(GameObject.FindGameObjectWithTag("forestEntrance"))
+		{
+			GameObject.FindGameObjectWithTag("forestEntrance").GetComponent<SpriteRenderer>().enabled = true;
+			GameObject.FindGameObjectWithTag("forestEntrance").GetComponent<BoxCollider2D>().enabled = true;
+		}
 		canExploreWoods = true;
 	}
 
