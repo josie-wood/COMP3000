@@ -8,6 +8,9 @@ TagManager:
   - YarnManager
   - StationaryCamera
   - forestEntrance
+  - MouseUI
+  - MouseArt
+  - Mouse
   layers:
   - Default
   - TransparentFX

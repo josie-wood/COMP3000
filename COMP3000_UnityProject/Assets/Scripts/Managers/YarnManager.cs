@@ -19,7 +19,6 @@ public class YarnManager : MonoBehaviour
 
     public GameObject currentlyInteractingWith;
 	public bool canExploreWoods { get; private set; }
-	public GameObject woodsEntranceUI;
 
 	public AreaEntrance forestEntrance;
 
@@ -34,6 +33,13 @@ public class YarnManager : MonoBehaviour
             "advanceEntryNode",     // name of new yarn command
             AdvanceEntryNode        // name of c# method to run
             );
+
+		//create meetMouse command
+		dialogueRunner.AddCommandHandler
+			(
+			"meetMouse",     // name of new yarn command
+			meetMouse        //name of c# method to run
+			);
 
 		//create Forage command
 		dialogueRunner.AddCommandHandler
@@ -115,6 +121,25 @@ public class YarnManager : MonoBehaviour
     {
         NPC.updateStartNode(newEntryNode);
     }
+
+	public void meetMouse()
+	{
+		//turn off the word prompt
+		//turn on the mouse visual
+		GameObject mouseUI = GameObject.FindGameObjectWithTag("MouseUI");
+		GameObject mouseArt = GameObject.FindGameObjectWithTag("MouseArt");
+
+		if (mouseUI) 
+		{
+			// turn ui prompt off
+			mouseUI.GetComponent<SpriteRenderer>().enabled = false;
+			mouseUI.GetComponentInChildren<SpriteRenderer>().enabled = false;
+
+			mouseArt.GetComponent<SpriteRenderer>().enabled = true;
+			GameObject.FindGameObjectWithTag("Mouse").GetComponent<Interactable>().updateUIPrompt();
+			mouseArt.GetComponentInChildren<SpriteRenderer>().enabled=true;
+		}
+	}
 
     public void Forage()
     {

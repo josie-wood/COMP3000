@@ -10,6 +10,7 @@ public class Interactable : MonoBehaviour
 
     public Collider2D range;
     public GameObject uiPrompt;
+	public GameObject secondUiPrompt;
 	public KeyCode interactKey;
 	public bool withinRange;
 	public DialogueRunner dialogueRunner;
@@ -80,5 +81,13 @@ public class Interactable : MonoBehaviour
 	public void updateStartNode(string newNode)
 	{
 		startNode= newNode;
+	}
+
+	public void updateUIPrompt()
+	{
+		uiPrompt.SetActive(false);
+		//in a case where ui prompt changes once and that's it
+		uiPrompt = secondUiPrompt;
+		uiPrompt.SetActive(true);
 	}
 }
