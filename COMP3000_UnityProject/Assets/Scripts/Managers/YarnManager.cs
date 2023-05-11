@@ -19,7 +19,6 @@ public class YarnManager : MonoBehaviour
 	public string startNode;
 	public bool metMouse;
 
-
     public GameObject currentlyInteractingWith;
 	public bool canExploreWoods { get; private set; }
 
@@ -150,6 +149,9 @@ public class YarnManager : MonoBehaviour
 			{
 				mouseArt.GetComponentInChildren<SpriteRenderer>().enabled = true;
 			}
+
+			GameObject.FindGameObjectWithTag("Blackberry1").GetComponent<Collider2D>().enabled = true;
+			GameObject.FindGameObjectWithTag("Blackberry2").GetComponent<Collider2D>().enabled = true;
 		}
 
 		metMouse = true;

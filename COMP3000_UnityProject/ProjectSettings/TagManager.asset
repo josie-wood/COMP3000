@@ -11,6 +11,8 @@ TagManager:
   - MouseUI
   - MouseArt
   - Mouse
+  - Blackberry1
+  - Blackberry2
   layers:
   - Default
   - TransparentFX
