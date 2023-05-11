@@ -741,6 +741,8 @@ You:    I explored the woods!
         Mouse:  Yes please!
         Mouse:  Let me just put my hikers on!
                 WOOHOO!
+
+        <<jump conclusion>>
 <<endif>>
 
 ===
