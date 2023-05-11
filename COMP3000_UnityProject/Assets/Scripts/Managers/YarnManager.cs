@@ -118,6 +118,17 @@ public class YarnManager : MonoBehaviour
 			NPC = mouse.GetComponent<Interactable>();
 		}
 		if(metMouse) { meetMouse(); }
+
+		// if there's a stationary camera in scene, disable the main camera attached to player.
+		if (GameObject.FindGameObjectWithTag("StationaryCamera"))
+		{
+			Debug.Log("found stat cam");
+			player.GetComponentInChildren<Camera>().enabled= false;
+		}
+		else
+		{
+			player.GetComponentInChildren<Camera>().enabled = true;
+		}
 	}
 
 	public void updateStartNode(string newNode)
