@@ -383,22 +383,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 841484759}
     m_Modifications:
-    - target: {fileID: 3362060261409852057, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: startAutomatically
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3362060261409852057, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: runSelectedOptionAsLine
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3653584866868415269, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3653584867078533838, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_Sprite
+    - target: {fileID: 3653584866868415289, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
+      propertyPath: optionViewPrefab
       value: 
-      objectReference: {fileID: 21300000, guid: 6892f66172bfe8d409231a81cece573a, type: 3}
+      objectReference: {fileID: 5665317717604146022, guid: 55031e0265bf448419452778f8d24bed, type: 3}
     - target: {fileID: 3653584867367298902, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -499,26 +491,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8428213010891032620, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6892f66172bfe8d409231a81cece573a, type: 3}
-    - target: {fileID: 8428213010891032620, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213010891032620, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_Color.b
-      value: 0.1792453
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213010891032620, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_Color.g
-      value: 0.1792453
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428213010891032620, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-      propertyPath: m_Color.r
-      value: 0.1792453
-      objectReference: {fileID: 0}
     - target: {fileID: 8428213010899780328, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -606,43 +578,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3686414919136309402, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
   m_PrefabInstance: {fileID: 1960252720}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1960252722 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8428213010498666189, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-  m_PrefabInstance: {fileID: 1960252720}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddcdd604a328c4ab296f048eb7b3a925, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1960252723 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4121586724569924324, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
-  m_PrefabInstance: {fileID: 1960252720}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1960252724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1960252723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 097b95c9f69f04f2d8c08a817e7786af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueView: {fileID: 1960252722}
-  continueActionType: 1
-  continueActionKeyCode: 32
 --- !u!114 &1960252725 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3362060261409852057, guid: a42e56a424172224b946391e0ccb6c3e, type: 3}
   m_PrefabInstance: {fileID: 1960252720}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1960252723}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
