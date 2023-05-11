@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     public Vector2 currentPos;
     public Animator playerAnim;
     public SpriteRenderer playerSprite;
+    public GameObject playerCamera;
 
     public bool movementLocked = false;
 
@@ -21,11 +22,14 @@ public class PlayerController : MonoBehaviour
 	private void Awake()
 	{
 		DontDestroyOnLoad(gameObject);
+		
 	}
 
 	// Start is called before the first frame update
 	void Start()
     {
+        
+
         playerRB= GetComponent<Rigidbody2D>();
         currentPos = GetComponent<Transform>().position;
         playerAnim = GetComponent<Animator>();
@@ -35,8 +39,17 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
+		// if there's a stationary camera in scene, disable the main camera attached to player.
+		if (GameObject.FindGameObjectWithTag("StationaryCamera"))
+		{
+			Debug.Log("found stat cam");
+			playerCamera.SetActive(false);
+		}
+        else
+        {
+			playerCamera.SetActive(true);
+		}
+	}
 
 	private void FixedUpdate()
 	{

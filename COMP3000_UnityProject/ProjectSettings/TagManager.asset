@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SceneManagement
   - YarnManager
+  - StationaryCamera
   layers:
   - Default
   - TransparentFX

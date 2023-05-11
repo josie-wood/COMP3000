@@ -127,6 +127,7 @@ MonoBehaviour:
   currentPos: {x: 0, y: 0}
   playerAnim: {fileID: 0}
   playerSprite: {fileID: 0}
+  playerCamera: {fileID: 9073047078635746869}
   movementLocked: 0
   inventory: []
 --- !u!95 &627882240211733815
