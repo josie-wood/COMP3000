@@ -190,7 +190,7 @@ title: lookAtThem
     but their eyes look weary, and blurry,
     and keep darting back inside.
     They're still smiling
-    but they somehow still look...
+    but the somehow still look...
     sad. 
 
 ->Come back another time?
@@ -243,7 +243,7 @@ You:    That's a lot of soup.
         Mouse:  ... it's better than it sounds
         Mouse:  And everything tastes good when you gather the ingredients yourself, I suppose
     -> Make a cheesy pun
-                Okay, let's do this
+                Okay, lets do this
         You:    That sounds pretty GOUDA
         You:    ...amiright?
                 Smooth
@@ -328,9 +328,9 @@ title: lookAtRoom
         The room behind them is dark,
         It's going to take my eyes a minute to adjust.
         Ah, the curtain are shut, that tracks.
-        So I guess their snoring was a full-on sleep?
+        So I guess their snoring was a full on sleep?
         Not a cosy spur-of-the-moment nap?
-        This place is set up in full-on sleep-mode. 
+        This place is set up in full on sleep-mode. 
         ...
         My eyes are starting to adjust!
         ...And there's stuff EVERYWHERE in there!
@@ -596,20 +596,20 @@ title: askToWalkONE
                 Mouse:  There's probably not even anything to find around here
                         Hmmm...
                         Maybe I need to scope out the area first?
-                You:    What if I look around by myself first?
+                You:    What if I go by myself first?
                 You:    See if there's anything fun to be found?
                 Mouse:  Ooh maybe
                 Mouse:  Yeah, come back if you find anything!
         <<else>>
-                You:    Well, what did you use to do on your adventures?
+                You:    Well, what did you used to do on your adventures?
                 You:    Is there a way to make it more fun?
                 Mouse:  Hmmm...
                 Mouse:  Well maybe if you find something exciting we could look for?
                 Mouse:  I used to like foraging for food
                 You:    That sounds fun!
                 You:    So if I go on a reconnaissance mission first,
-                You:    See if there's any wild food growing nearby,
-                You:    And if I find anything, you might join next time?
+                You:    See if there's any wild food growing,
+                You:    And if I find anything, you might join?
                 Mouse:  Yeah, maybe!
                 Mouse:  Would be good to know what's around here 
                 Mouse:  Let me know if you find anything!
@@ -641,9 +641,7 @@ title: askToWalkTWO
         Mouse:  Oooh that's so exciting!
         Mouse:  We could make a jam or a crumble or anything!
         Mouse:  Where did you find them?
-        -> 'Just there, by that entrance way!'
-                Mouse:  Oh, that's the entrance to the woods!
-                You:    Oh cool!
+        -> 'Just down the lane, by the entrance to the woods!'
                 You:    I bet there's loads more to be found in the actual woods!
                 Mouse:  Ooh probably! 
                 Mouse:  And woodlands are so fun to explore
@@ -653,7 +651,6 @@ title: askToWalkTWO
                 Mouse:  Very sneaky!
                 Mouse:  I am intrigued to find out where we could find things...
                 You:    I have a good area in mind we could explore
-                You:    Just beyond where I found them
                 You:    So, wanna go for that walk?
 
         Mouse:  ...It sounds really tempting!
@@ -671,6 +668,7 @@ title: askToWalkTWO
         You:    I'll go explore,
         You:    Draw up a map of the area,
         You:    Collect any wild food I find on the way,
+        You:    Mark those spots on the map,
         You:    And then show you so you can decide if you wanna come with!
         Mouse:  That would be perfect!
         Mouse:  Thank you so much for your help!
@@ -725,8 +723,8 @@ You:    I explored the woods!
         Mouse:  Just some more edible plants we can collect!
         Mouse:  They should be easy to spot and identify now you have the book
         Mouse:  Find some plants, look them up,
-        Mouse:  And gather them to show me!
-        Mouse:  That way we can go back and find more together!
+        Mouse:  And gather them to add a pin to the map!
+        Mouse:  That way we can go back and find them together!
         You:    I'm sure I can do that!
         Mouse:  Thank you so much!
         Mouse:  If you can find at least 3 types of food growing in the woods that would be great

@@ -1,4 +1,4 @@
-title: blackberry
+﻿title: blackberry
 tags:
 ---
 A blackberry bush!
@@ -18,7 +18,6 @@ title: chanterelle
     A cluster of golden yellow mushrooms! 
 <<elseif $chanterelle_id>>
 A chanterelle mushroom! 
-   <<jump alreadyForaged>>
 <<endif>>
 
 -> Look up in field guide
@@ -45,7 +44,6 @@ title: garlic
     A veritable ocean of garlicky-smelling leaves! 
 <<elseif $garlic_id>>
     A mass of Wild Garlic!
-       <<jump alreadyForaged>>
 <<endif>>
 
 -> Look up in field guide
@@ -69,8 +67,7 @@ title: dandelion
 <<if !$dandelion_id>>
     A fluffy yellow flower growing amongst the grass
 <<elseif $dandelion_id>>
-    A dandelion!
-       <<jump alreadyForaged>>
+    A dandelion! 
 <<endif>>
 
 -> Look up in field guide
@@ -89,7 +86,28 @@ title: dandelion
 
 ===
 
+title: nettle
+---
+<<if !$nettle_id>>
+    Ouch! Some stingy leaves
+<<elseif $nettle_id>>
+    Stinging Nettles!
+<<endif>>
 
+-> Look up in field guide
+        <<set $nettle_id to true>>
+        I found a match!
+        'Stinging Nettle, scientific name Urtica dioica'
+        'Found in a variety of environments from the countryside to urban areas'
+        'Grab some gloves to collect the leaves, cook them to remove the stings, and try making a nettle pesto'
+        <<if checkInventory("nettle") == false>>
+            -> Nab some nettles 
+                <<forage>> 
+                <<jump foraged>>
+            -> Walk Away
+        <<endif>>
+-> Walk Away
+===
 
 title: elderflower
 ---
@@ -97,7 +115,6 @@ title: elderflower
     Some sweet smelling white flowers
 <<elseif $elderflower_id>>
     Elderflower!
-       <<jump alreadyForaged>>
 <<endif>>
 
 -> Look up in field guide
@@ -115,7 +132,29 @@ title: elderflower
 -> Walk Away
 ===
 
+title: chestnut
+---
+<<if !$chestnut_id>>
+    Looks like extra-spiky looking conkers?
+<<elseif $chestnut_id>>
+    Sweet Chestnut!
+<<endif>>
 
+-> Look up in field guide
+        <<set $chestnut_id to true>>
+        I found a match!
+        'Sweet Chestnut, the nuts of the Castanea sativa tree'
+        'Found in woodland in autumn'
+        'Be careful not to confuse with the poisionous Horse Chestnut, commonly known as conkers'
+        'Roast your own chestnuts on an open fire!'
+        <<if checkInventory("chestnut") == false>>
+            -> Collect some sweet chestnuts
+                <<forage>> 
+                <<jump foraged>>
+            -> Walk Away
+        <<endif>>
+-> Walk Away
+===
 
 title: strawberry
 ---
@@ -123,7 +162,6 @@ title: strawberry
     Teeny tiny strawberries?
 <<elseif $strawberry_id>>
     Wild Strawberries!
-       <<jump alreadyForaged>>
 <<endif>>
 
 -> Look up in field guide
@@ -147,7 +185,6 @@ title: crabapple
     Miniature apples?
 <<elseif $crabapple_id>>
     Crabapples!
-       <<jump alreadyForaged>>
 <<endif>>
 
 -> Look up in field guide
@@ -165,6 +202,51 @@ title: crabapple
 -> Walk Away
 ===
 
+title: pine
+---
+<<if !$pine_id>>
+    Spikey tree with cones on the branches
+<<elseif $pine_id>>
+    A pine tree!
+<<endif>>
+
+-> Look up in field guide
+        <<set $pine_id to true>>
+        I found a match!
+        'Pine tree'
+        'Seeds and needles can be eaten'
+        'A pine needle tea is filled with vitamins to soothe a cold'
+        <<if checkInventory("pine") == false>>
+            -> Pick up some pine needles
+                <<forage>> 
+                <<jump foraged>>
+            -> Walk Away
+        <<endif>>
+-> Walk Away
+===
+
+title: gorse
+---
+<<if !$gorse_id>>
+    Spiky bushes with yellow flowers that smell... coconutty?
+<<elseif $gorse_id>>
+    Gorse!
+<<endif>>
+
+-> Look up in field guide
+        <<set $gorse_id to true>>
+        I found a match!
+        'Gorse, scientific name Ulex europaeus'
+        'Found in abundance in sunny heathland'
+        'Pick the flowers and use in salads, syrups, and teas'
+        <<if checkInventory("gorse") == false>>
+            -> Gather some Gorse flowers
+                <<forage>> 
+                <<jump foraged>>
+            -> Walk Away
+        <<endif>>
+-> Walk Away
+===
 
 title: foraged
 ---
