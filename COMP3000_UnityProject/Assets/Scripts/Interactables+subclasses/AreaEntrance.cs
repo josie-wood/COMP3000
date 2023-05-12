@@ -7,10 +7,19 @@ public class AreaEntrance : Interactable
     public string scenePointedTo;
     public SceneManagement sceneManagement;
     public bool areaAccessible;
+    public SpriteRenderer closedSign;
 
 	private void Start()
 	{
         areaAccessible = yarnManager.canExploreWoods;
+        if(!areaAccessible)
+        {
+            closedSign.enabled = true;
+        }
+        else
+        {
+			closedSign.enabled = false;
+		}
 	}
 
 	// Update is called once per frame
