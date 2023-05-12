@@ -44,12 +44,18 @@ public class Interactable : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-        inInteractionRange();
+		if (collision.tag == "Player")
+		{
+			inInteractionRange();
+		}
 	}
 
 	private void OnTriggerExit2D(Collider2D collision)
 	{
-		outInteractionRange();
+		if (collision.tag == "Player")
+		{
+			outInteractionRange();
+		}
 	}
 
 	private void inInteractionRange()
