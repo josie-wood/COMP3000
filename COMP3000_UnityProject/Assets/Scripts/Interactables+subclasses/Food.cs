@@ -11,7 +11,6 @@ public class Food : Interactable
     public PlayerController playerController;
     public Sprite postForageSprite;
 
-    public DialogueRunner dialogueRunner;
     // Start is called before the first frame update
     void Start()
     {
