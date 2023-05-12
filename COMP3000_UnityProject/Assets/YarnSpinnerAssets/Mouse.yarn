@@ -26,6 +26,7 @@ Mouse:  Right!
 Mouse:  One second!
 //sounds of slippers
 //mouse appears
+<<meetMouse>>
 Mouse:  *yawwwwn* 
 Mouse:  Good morn- afternoon?
 Mouse:  Evening?
@@ -75,6 +76,7 @@ Mouse:  Agreed.
         That and something to do with casserole, apparently, but I'll burn that bridge when I get to it.
 
 <<set $smallTalk to 0>>
+
 <<advanceEntryNode talkAgain>>
 
 <<jump discussion>>

@@ -264,6 +264,7 @@ MonoBehaviour:
   player: {fileID: 0}
   playerControl: {fileID: 0}
   sceneManagement: {fileID: 0}
+  startNode: IntroduceMouse
   currentlyInteractingWith: {fileID: 0}
   forestEntrance: {fileID: 0}
 --- !u!4 &841484759

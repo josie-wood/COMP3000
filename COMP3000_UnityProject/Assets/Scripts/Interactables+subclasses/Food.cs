@@ -33,7 +33,7 @@ public class Food : Interactable
 					//set this as currently interacting object in yarnMan
 
 					yarnManager.setCurrentInteractingWith(this.gameObject);
-					yarnManager.startingDialogue(startNode);
+					yarnManager.startingDialogueItem(foodName);
 				}
 			
 		}
@@ -56,12 +56,11 @@ public class Food : Interactable
             this.GetComponent<Collider2D>().enabled = false;
 
             // run dialogue
-            updateStartNode("alreadyForaged");
 		}
         else
         {
 
-			updateStartNode("alreadyForaged");
+			yarnManager.startingDialogueItem("alreadyForaged");
 			Debug.Log("already one in inventory");
         }
     }

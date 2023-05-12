@@ -7,6 +7,12 @@ TagManager:
   - SceneManagement
   - YarnManager
   - StationaryCamera
+  - forestEntrance
+  - MouseUI
+  - MouseArt
+  - Mouse
+  - Blackberry1
+  - Blackberry2
   layers:
   - Default
   - TransparentFX

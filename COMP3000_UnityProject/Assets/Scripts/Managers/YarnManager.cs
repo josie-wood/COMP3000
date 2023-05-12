@@ -16,6 +16,8 @@ public class YarnManager : MonoBehaviour
     public GameObject player;
     public PlayerController playerControl;
 	public SceneManagement sceneManagement;
+	public string startNode;
+	public bool metMouse;
 
     public GameObject currentlyInteractingWith;
 	public bool canExploreWoods { get; private set; }
@@ -33,6 +35,13 @@ public class YarnManager : MonoBehaviour
             "advanceEntryNode",     // name of new yarn command
             AdvanceEntryNode        // name of c# method to run
             );
+
+		//create meetMouse command
+		dialogueRunner.AddCommandHandler
+			(
+			"meetMouse",     // name of new yarn command
+			meetMouse        //name of c# method to run
+			);
 
 		//create Forage command
 		dialogueRunner.AddCommandHandler
@@ -108,12 +117,56 @@ public class YarnManager : MonoBehaviour
 		{
 			NPC = mouse.GetComponent<Interactable>();
 		}
+		if(metMouse) { meetMouse(); }
+
+		// if there's a stationary camera in scene, disable the main camera attached to player.
+		if (GameObject.FindGameObjectWithTag("StationaryCamera"))
+		{
+			Debug.Log("found stat cam");
+			player.GetComponentInChildren<Camera>().enabled= false;
+		}
+		else
+		{
+			player.GetComponentInChildren<Camera>().enabled = true;
+		}
+	}
+
+	public void updateStartNode(string newNode)
+	{
+		startNode = newNode;
 	}
 
 	public void AdvanceEntryNode(string newEntryNode)
     {
-        NPC.updateStartNode(newEntryNode);
+        updateStartNode(newEntryNode);
     }
+
+	public void meetMouse()
+	{
+		//turn off the word prompt
+		//turn on the mouse visual
+		GameObject mouseUI = GameObject.FindGameObjectWithTag("MouseUI");
+		GameObject mouseArt = GameObject.FindGameObjectWithTag("MouseArt");
+
+		if (mouseUI) 
+		{
+			// turn ui prompt off
+			mouseUI.GetComponent<SpriteRenderer>().enabled = false;
+			mouseUI.GetComponentInChildren<SpriteRenderer>().enabled = false;
+
+			mouseArt.GetComponent<SpriteRenderer>().enabled = true;
+			GameObject.FindGameObjectWithTag("Mouse").GetComponent<Interactable>().updateUIPrompt();
+			if(!metMouse)
+			{
+				mouseArt.GetComponentInChildren<SpriteRenderer>().enabled = true;
+			}
+
+			GameObject.FindGameObjectWithTag("Blackberry1").GetComponent<Collider2D>().enabled = true;
+			GameObject.FindGameObjectWithTag("Blackberry2").GetComponent<Collider2D>().enabled = true;
+		}
+
+		metMouse = true;
+	}
 
     public void Forage()
     {
@@ -134,6 +187,11 @@ public class YarnManager : MonoBehaviour
 	private void UnlockWoods()
 	{
 		forestEntrance.setAreaAccessibility(true);
+		if(GameObject.FindGameObjectWithTag("forestEntrance"))
+		{
+			GameObject.FindGameObjectWithTag("forestEntrance").GetComponent<SpriteRenderer>().enabled = true;
+			GameObject.FindGameObjectWithTag("forestEntrance").GetComponent<BoxCollider2D>().enabled = true;
+		}
 		canExploreWoods = true;
 	}
 
@@ -166,7 +224,7 @@ public class YarnManager : MonoBehaviour
 		sceneManagement.loadEnd();
 	}
 
-	public void startingDialogue(string startNode)
+	public void startingDialogueMouse()
     {
 		//lock movement when talking to NPC
 		playerControl.lockMovement();
@@ -175,6 +233,17 @@ public class YarnManager : MonoBehaviour
 		// play node
 		Debug.Log("trying to start the dialogue now");
 		dialogueRunner.StartDialogue(startNode);
+	}
+
+	public void startingDialogueItem(string itemName)
+	{
+		//lock movement when talking to NPC
+		playerControl.lockMovement();
+
+
+		// play node
+		Debug.Log("trying to start the dialogue now");
+		dialogueRunner.StartDialogue(itemName);
 	}
 
     public void endingDialogue()
