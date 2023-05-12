@@ -129,6 +129,11 @@ public class YarnManager : MonoBehaviour
 		{
 			player.GetComponentInChildren<Camera>().enabled = true;
 		}
+
+		if(canExploreWoods)
+		{
+			UnlockWoods();
+		}
 	}
 
 	public void updateStartNode(string newNode)
@@ -191,6 +196,7 @@ public class YarnManager : MonoBehaviour
 		{
 			GameObject.FindGameObjectWithTag("forestEntrance").GetComponent<SpriteRenderer>().enabled = true;
 			GameObject.FindGameObjectWithTag("forestEntrance").GetComponent<BoxCollider2D>().enabled = true;
+			forestEntrance.closedSign.enabled= false;
 		}
 		canExploreWoods = true;
 	}

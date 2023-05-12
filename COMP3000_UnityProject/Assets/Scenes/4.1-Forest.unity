@@ -692,6 +692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 33731909}
   uiPrompt: {fileID: 1792770543}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -1006,6 +1007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 46567202}
   uiPrompt: {fileID: 1930140096}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -1385,6 +1387,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 70309222}
   uiPrompt: {fileID: 1068625503}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -1596,6 +1599,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 82847568}
   uiPrompt: {fileID: 1658201330}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -1723,6 +1727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 83370805}
   uiPrompt: {fileID: 100355008}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -2354,6 +2359,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 105430365}
   uiPrompt: {fileID: 1685111688}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -2901,6 +2907,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 114965606}
   uiPrompt: {fileID: 2082493520}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -3775,6 +3782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 142495689}
   uiPrompt: {fileID: 1298575835}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -4268,6 +4276,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5690877140863623918, guid: df8f4af617bc23a4597ea2af0f9e6c74, type: 3}
   m_PrefabInstance: {fileID: 1721915823}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &175909165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 175909167}
+  - component: {fileID: 175909166}
+  m_Layer: 0
+  m_Name: bridge (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &175909166
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175909165}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: a8415d6be4b9edc4eba79fbd36650f96, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.6, y: 2.7}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &175909167
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175909165}
+  m_LocalRotation: {x: -0, y: -0, z: 0.24601497, w: 0.96926606}
+  m_LocalPosition: {x: 80.98, y: 60.53, z: 0}
+  m_LocalScale: {x: 2.1949906, y: 2.1949906, z: 2.1949906}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 28.484}
 --- !u!1001 &178721854
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4490,6 +4582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 186369921}
   uiPrompt: {fileID: 167920552}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -5557,6 +5650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 241012967}
   uiPrompt: {fileID: 1458318813}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -5684,6 +5778,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 243886732}
   uiPrompt: {fileID: 2131617527}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -6300,6 +6395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 269172093}
   uiPrompt: {fileID: 1696817009}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -6308,6 +6404,7 @@ MonoBehaviour:
   scenePointedTo: 4-GameplayScene
   sceneManagement: {fileID: 360174777}
   areaAccessible: 1
+  closedSign: {fileID: 0}
 --- !u!212 &269172095
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6719,6 +6816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 277871208}
   uiPrompt: {fileID: 856804496}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -7046,6 +7144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 287051998}
   uiPrompt: {fileID: 544662921}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -8844,6 +8943,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 359844283}
   uiPrompt: {fileID: 824031419}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -9172,6 +9272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 379884476}
   uiPrompt: {fileID: 988334940}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -9516,6 +9617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 388045745}
   uiPrompt: {fileID: 1859854016}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -10147,6 +10249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 404629159}
   uiPrompt: {fileID: 797709629}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -10678,6 +10781,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 419172562}
   uiPrompt: {fileID: 511948240}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -11162,6 +11266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 431837687}
   uiPrompt: {fileID: 1989073288}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -11622,6 +11727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 466836008}
   uiPrompt: {fileID: 1892315471}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -12534,6 +12640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 494703467}
   uiPrompt: {fileID: 821266625}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -12761,6 +12868,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 497216915}
   uiPrompt: {fileID: 1246544288}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -12972,6 +13080,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 501058599}
   uiPrompt: {fileID: 354450994}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -13587,6 +13696,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 524799003}
   uiPrompt: {fileID: 1799221442}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -15244,6 +15354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 611047205}
   uiPrompt: {fileID: 320485777}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -15539,6 +15650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 628109700}
   uiPrompt: {fileID: 1136303192}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -18244,6 +18356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 639112775}
   uiPrompt: {fileID: 642669003}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -19379,6 +19492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 697717733}
   uiPrompt: {fileID: 1010082881}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -19759,6 +19873,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 720996139}
   uiPrompt: {fileID: 630375241}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -20390,6 +20505,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 742294502}
   uiPrompt: {fileID: 1763365967}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -20536,6 +20652,418 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &747955161
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 747955165}
+  - component: {fileID: 747955164}
+  - component: {fileID: 747955163}
+  - component: {fileID: 747955162}
+  m_Layer: 0
+  m_Name: river-colldiermap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!60 &747955162
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747955161}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 73.8, y: 73.8}
+    newSize: {x: 73.8, y: 73.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -3.2431643, y: -23.314747}
+      - {x: -2.774707, y: -22.91836}
+      - {x: -2.522461, y: -22.702148}
+      - {x: -1.8738282, y: -22.341797}
+      - {x: -1.6576172, y: -22.161621}
+      - {x: -1.369336, y: -21.80127}
+      - {x: -1.1891602, y: -21.332813}
+      - {x: -1.1891602, y: -20.251759}
+      - {x: -1.3333008, y: -19.531055}
+      - {x: -1.5495118, y: -19.0626}
+      - {x: -1.837793, y: -18.522072}
+      - {x: -2.5584962, y: -17.621193}
+      - {x: -2.522461, y: -16.936523}
+      - {x: -2.3422852, y: -16.540138}
+      - {x: -1.9819337, y: -16.179787}
+      - {x: -1.2972656, y: -15.85547}
+      - {x: 0.21621095, y: -15.963574}
+      - {x: 1.153125, y: -16.07168}
+      - {x: 1.837793, y: -16.143751}
+      - {x: 2.9188478, y: -16.251856}
+      - {x: 3.9638674, y: -16.287891}
+      - {x: 4.3602543, y: -16.179787}
+      - {x: 5.2250977, y: -16.143751}
+      - {x: 5.8016605, y: -15.99961}
+      - {x: 6.2701173, y: -15.819434}
+      - {x: 6.7746096, y: -15.531153}
+      - {x: 7.351172, y: -14.88252}
+      - {x: 7.783594, y: -14.125782}
+      - {x: 8.03584, y: -13.369043}
+      - {x: 8.468262, y: -12.540235}
+      - {x: 9.008789, y: -12.035743}
+      - {x: 9.657422, y: -11.819531}
+      - {x: 10.089844, y: -11.747461}
+      - {x: 11.675391, y: -11.711427}
+      - {x: 11.711427, y: -11.747461}
+      - {x: 12.72041, y: -11.819531}
+      - {x: 13.76543, y: -11.855567}
+      - {x: 15.531153, y: -11.855567}
+      - {x: 15.99961, y: -11.819531}
+      - {x: 16.468067, y: -11.747461}
+      - {x: 17.224806, y: -11.603321}
+      - {x: 17.693262, y: -11.351074}
+      - {x: 18.37793, y: -10.702442}
+      - {x: 18.666212, y: -10.197949}
+      - {x: 18.882423, y: -9.729492}
+      - {x: 19.278809, y: -8.756543}
+      - {x: 19.711231, y: -8.288086}
+      - {x: 20.107618, y: -8.071876}
+      - {x: 20.972462, y: -7.747559}
+      - {x: 21.404884, y: -7.5313478}
+      - {x: 21.7292, y: -7.315137}
+      - {x: 22.341797, y: -6.7385745}
+      - {x: 22.449903, y: -6.5583987}
+      - {x: 22.738184, y: -6.198047}
+      - {x: 22.954395, y: -5.513379}
+      - {x: 22.99043, y: -5.008887}
+      - {x: 22.99043, y: -4.2161136}
+      - {x: 22.84629, y: -3.3873048}
+      - {x: 22.63008, y: -2.8467774}
+      - {x: 22.197657, y: -1.9458985}
+      - {x: 22.089552, y: -1.7657228}
+      - {x: 21.837305, y: -1.4053712}
+      - {x: 21.440918, y: -0.9369141}
+      - {x: 21.044533, y: -0.54052734}
+      - {x: 20.251759, y: -0.14414063}
+      - {x: 20.107618, y: -0.036035158}
+      - {x: 19.0626, y: 0.28828126}
+      - {x: 18.522072, y: 0.3243164}
+      - {x: 17.585157, y: 0.39638674}
+      - {x: 15.747364, y: 0.5044922}
+      - {x: 14.269922, y: 0.54052734}
+      - {x: 14.233888, y: 0.4324219}
+      - {x: 14.450098, y: -0.18017578}
+      - {x: 14.522168, y: -0.36035156}
+      - {x: 14.666309, y: -0.39638674}
+      - {x: 15.314942, y: -0.54052734}
+      - {x: 16.07168, y: -0.5765625}
+      - {x: 16.648243, y: -0.684668}
+      - {x: 18.954493, y: -1.1891602}
+      - {x: 19.711231, y: -1.6936524}
+      - {x: 20.287794, y: -2.2341797}
+      - {x: 20.828321, y: -2.9548829}
+      - {x: 21.044533, y: -3.4593751}
+      - {x: 21.188673, y: -4.144043}
+      - {x: 21.224709, y: -4.9368167}
+      - {x: 21.044533, y: -5.65752}
+      - {x: 20.720215, y: -6.234082}
+      - {x: 20.215723, y: -6.882715}
+      - {x: 19.783302, y: -7.243067}
+      - {x: 19.242775, y: -7.5673833}
+      - {x: 18.918457, y: -7.783594}
+      - {x: 18.45, y: -8.468262}
+      - {x: 18.16172, y: -9.008789}
+      - {x: 18.053614, y: -9.441212}
+      - {x: 17.765333, y: -9.981739}
+      - {x: 17.296875, y: -10.522266}
+      - {x: 17.008595, y: -10.738477}
+      - {x: 15.85547, y: -10.918653}
+      - {x: 15.85547, y: -10.954688}
+      - {x: 14.053712, y: -10.954688}
+      - {x: 14.017676, y: -10.918653}
+      - {x: 13.080762, y: -10.882618}
+      - {x: 12.612306, y: -10.846582}
+      - {x: 11.963673, y: -10.810547}
+      - {x: 10.414161, y: -10.810547}
+      - {x: 10.017774, y: -10.846582}
+      - {x: 9.405176, y: -10.954688}
+      - {x: 9.15293, y: -11.026758}
+      - {x: 8.756543, y: -11.170898}
+      - {x: 8.216016, y: -11.45918}
+      - {x: 7.96377, y: -11.639356}
+      - {x: 7.351172, y: -12.251954}
+      - {x: 6.450293, y: -13.729395}
+      - {x: 5.9818363, y: -14.378028}
+      - {x: 5.6214848, y: -14.81045}
+      - {x: 4.54043, y: -15.242871}
+      - {x: 4.5043945, y: -15.278907}
+      - {x: 2.774707, y: -15.278907}
+      - {x: 2.738672, y: -15.242871}
+      - {x: 0.5765625, y: -15.026661}
+      - {x: 0.18017578, y: -14.990625}
+      - {x: -0.6486328, y: -14.918555}
+      - {x: -1.4774414, y: -14.918555}
+      - {x: -2.1621094, y: -14.990625}
+      - {x: -2.738672, y: -15.278907}
+      - {x: -3.7836916, y: -15.85547}
+      - {x: -4.3242188, y: -16.251856}
+      - {x: -4.9728518, y: -16.936523}
+      - {x: -5.2250977, y: -17.260841}
+      - {x: -5.513379, y: -17.693262}
+      - {x: -5.8737307, y: -18.45}
+      - {x: -6.0178714, y: -18.882423}
+      - {x: -6.234082, y: -20.359863}
+      - {x: -6.450293, y: -21.765236}
+      - {x: -6.450293, y: -22.161621}
+      - {x: -6.378223, y: -22.449903}
+      - {x: -6.162012, y: -23.026466}
+      - {x: -5.65752, y: -23.60303}
+      - {x: -5.261133, y: -23.783205}
+      - {x: -5.044922, y: -23.855274}
+      - {x: -4.828711, y: -23.89131}
+      - {x: -4.4323244, y: -23.89131}
+      - {x: -4.2161136, y: -23.855274}
+      - {x: -3.9278321, y: -23.783205}
+      - {x: -3.5674806, y: -23.566994}
+    - - {x: -1.1170899, y: -0.36035156}
+      - {x: -0.5765625, y: -0.3243164}
+      - {x: 0.684668, y: -0.28828126}
+      - {x: 0.7207031, y: -0.3243164}
+      - {x: 2.7026367, y: -0.36035156}
+      - {x: 4.9368167, y: -0.39638674}
+      - {x: 6.4863286, y: -0.39638674}
+      - {x: 6.5223637, y: -0.36035156}
+      - {x: 9.477246, y: -0.36035156}
+      - {x: 9.513282, y: -0.39638674}
+      - {x: 10.233985, y: -0.39638674}
+      - {x: 10.27002, y: -0.3243164}
+      - {x: 10.27002, y: -0.18017578}
+      - {x: 10.161915, y: 0.39638674}
+      - {x: 10.017774, y: 0.5044922}
+      - {x: 9.657422, y: 0.54052734}
+      - {x: 6.9908204, y: 0.54052734}
+      - {x: 5.0809574, y: 0.5044922}
+      - {x: 5.044922, y: 0.54052734}
+      - {x: 3.0269532, y: 0.5765625}
+      - {x: 1.0450196, y: 0.6486328}
+      - {x: -0.7927735, y: 0.6125977}
+      - {x: -1.2251954, y: 0.54052734}
+      - {x: -2.1981447, y: 0.5044922}
+      - {x: -3.3873048, y: 0.4324219}
+      - {x: -4.3242188, y: 0.3243164}
+      - {x: -5.6214848, y: 0.3243164}
+      - {x: -6.125977, y: 0.4324219}
+      - {x: -8.179981, y: 0.9369141}
+      - {x: -8.684473, y: 1.153125}
+      - {x: -9.729492, y: 1.9458985}
+      - {x: -10.161915, y: 2.3783205}
+      - {x: -10.450195, y: 2.8467774}
+      - {x: -10.882618, y: 3.8197267}
+      - {x: -11.026758, y: 4.9368167}
+      - {x: -11.098828, y: 4.9368167}
+      - {x: -11.098828, y: 8.071876}
+      - {x: -11.134864, y: 8.792579}
+      - {x: -11.2429695, y: 10.197949}
+      - {x: -11.351074, y: 11.098828}
+      - {x: -11.45918, y: 11.8916025}
+      - {x: -11.711427, y: 12.900586}
+      - {x: -11.999707, y: 13.513185}
+      - {x: -12.5042, y: 14.017676}
+      - {x: -13.260938, y: 14.414063}
+      - {x: -14.125782, y: 14.630274}
+      - {x: -14.702344, y: 14.702344}
+      - {x: -14.918555, y: 14.702344}
+      - {x: -15.675294, y: 13.909571}
+      - {x: -15.675294, y: 13.801465}
+      - {x: -15.531153, y: 13.69336}
+      - {x: -14.846485, y: 13.477149}
+      - {x: -14.197852, y: 13.152833}
+      - {x: -13.657325, y: 12.864552}
+      - {x: -13.152833, y: 12.360059}
+      - {x: -12.936622, y: 11.855567}
+      - {x: -12.540235, y: 10.522266}
+      - {x: -12.360059, y: 9.369141}
+      - {x: -12.179883, y: 7.7115235}
+      - {x: -12.107813, y: 6.414258}
+      - {x: -12.071778, y: 6.0178714}
+      - {x: -12.035743, y: 5.549414}
+      - {x: -11.963673, y: 4.108008}
+      - {x: -11.8916025, y: 2.9548829}
+      - {x: -11.855567, y: 2.4864259}
+      - {x: -11.603321, y: 1.7296876}
+      - {x: -11.098828, y: 0.97294927}
+      - {x: -10.558301, y: 0.5044922}
+      - {x: -9.801563, y: 0}
+      - {x: -9.261036, y: -0.18017578}
+      - {x: -8.540333, y: -0.36035156}
+      - {x: -7.8556643, y: -0.46845704}
+      - {x: -6.9187503, y: -0.5765625}
+      - {x: -6.5223637, y: -0.6125977}
+      - {x: -4.1800785, y: -0.6125977}
+      - {x: -3.2791994, y: -0.46845704}
+      - {x: -2.5945313, y: -0.4324219}
+      - {x: -1.585547, y: -0.39638674}
+    - - {x: -17.729298, y: 17.368946}
+      - {x: -17.873438, y: 18.774317}
+      - {x: -17.945509, y: 19.783302}
+      - {x: -18.125685, y: 20.720215}
+      - {x: -18.341896, y: 21.512989}
+      - {x: -18.522072, y: 22.089552}
+      - {x: -18.738281, y: 22.413868}
+      - {x: -19.20674, y: 22.84629}
+      - {x: -19.49502, y: 23.0625}
+      - {x: -20.251759, y: 23.422853}
+      - {x: -20.431934, y: 23.60303}
+      - {x: -21.404884, y: 24.359766}
+      - {x: -21.80127, y: 24.828224}
+      - {x: -22.305763, y: 26.12549}
+      - {x: -22.63008, y: 26.593946}
+      - {x: -22.84629, y: 26.810158}
+      - {x: -23.170607, y: 26.954298}
+      - {x: -23.639063, y: 27.062403}
+      - {x: -24.900293, y: 27.098438}
+      - {x: -25.512892, y: 27.134474}
+      - {x: -26.629982, y: 27.819141}
+      - {x: -26.846193, y: 28.215528}
+      - {x: -26.810158, y: 28.900196}
+      - {x: -26.774122, y: 29.69297}
+      - {x: -26.738087, y: 30.449709}
+      - {x: -26.810158, y: 30.485743}
+      - {x: -27.53086, y: 30.485743}
+      - {x: -27.60293, y: 30.413673}
+      - {x: -27.638966, y: 30.089357}
+      - {x: -27.711037, y: 29.224512}
+      - {x: -27.711037, y: 27.963282}
+      - {x: -27.53086, y: 27.38672}
+      - {x: -27.31465, y: 26.990334}
+      - {x: -26.702051, y: 26.485842}
+      - {x: -25.945314, y: 26.19756}
+      - {x: -25.044436, y: 26.017384}
+      - {x: -24.756153, y: 25.981348}
+      - {x: -24.251661, y: 25.945314}
+      - {x: -23.783205, y: 25.801172}
+      - {x: -23.566994, y: 25.548927}
+      - {x: -23.242678, y: 24.792189}
+      - {x: -22.882324, y: 24.071486}
+      - {x: -22.558008, y: 23.60303}
+      - {x: -22.01748, y: 23.0625}
+      - {x: -20.972462, y: 22.305763}
+      - {x: -20.395899, y: 21.7292}
+      - {x: -19.531055, y: 20.431934}
+      - {x: -19.531055, y: 20.359863}
+      - {x: -19.314844, y: 19.531055}
+      - {x: -19.0626, y: 17.693262}
+      - {x: -18.846388, y: 16.756348}
+      - {x: -18.630177, y: 16.07168}
+      - {x: -18.16172, y: 15.278907}
+      - {x: -17.945509, y: 15.278907}
+      - {x: -17.441017, y: 15.603223}
+      - {x: -17.260841, y: 15.819434}
+      - {x: -17.260841, y: 15.891504}
+--- !u!50 &747955163
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747955161}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!212 &747955164
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747955161}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: e2c7ac8313989de4895c718b10d2c518, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 73.8, y: 73.8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &747955165
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747955161}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 60.6, y: 60.7, z: 0}
+  m_LocalScale: {x: 1.6547266, y: 1.6547266, z: 1.6547266}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &758827578
 GameObject:
   m_ObjectHideFlags: 0
@@ -20942,6 +21470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 773386550}
   uiPrompt: {fileID: 1420883534}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -21069,6 +21598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 780391639}
   uiPrompt: {fileID: 422886295}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -21280,6 +21810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 781902641}
   uiPrompt: {fileID: 1303193462}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -21475,6 +22006,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 789288764}
   uiPrompt: {fileID: 415483729}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -23220,6 +23752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 856897926}
   uiPrompt: {fileID: 1001361239}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -23683,6 +24216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 868713576}
   uiPrompt: {fileID: 1082546042}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -23894,6 +24428,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 875594148}
   uiPrompt: {fileID: 908716534}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -24278,6 +24813,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 881590073}
   uiPrompt: {fileID: 826565638}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -25166,6 +25702,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 912272394}
   uiPrompt: {fileID: 1353491046}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -26829,6 +27366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 988712232}
   uiPrompt: {fileID: 1718231713}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -27224,6 +27762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1005854977}
   uiPrompt: {fileID: 1558695765}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -27771,6 +28310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1020291890}
   uiPrompt: {fileID: 641287376}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -28295,6 +28835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1051899226}
   uiPrompt: {fileID: 961719470}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -28511,6 +29052,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1065716999}
   uiPrompt: {fileID: 993710548}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -28854,6 +29396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1078232165}
   uiPrompt: {fileID: 1010271696}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -30408,6 +30951,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1145480812}
   uiPrompt: {fileID: 561798217}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -30540,6 +31084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1152331307}
   uiPrompt: {fileID: 1540143772}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -30835,6 +31380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1161621544}
   uiPrompt: {fileID: 1974056762}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -31634,6 +32180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1185842130}
   uiPrompt: {fileID: 1651917373}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -32587,6 +33134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1214941200}
   uiPrompt: {fileID: 247335093}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -33253,6 +33801,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1231927708}
   uiPrompt: {fileID: 404636344}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -33585,6 +34134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1238902184}
   uiPrompt: {fileID: 393066740}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -33796,6 +34346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1241339283}
   uiPrompt: {fileID: 293918182}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -34007,6 +34558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1248396910}
   uiPrompt: {fileID: 1728309922}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -34302,6 +34854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1262938430}
   uiPrompt: {fileID: 1692940538}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -34429,6 +34982,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1264953638}
   uiPrompt: {fileID: 1769658861}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -35380,6 +35934,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1306090313}
   uiPrompt: {fileID: 1631762817}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -36350,6 +36905,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1334805803}
   uiPrompt: {fileID: 2143484886}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -40624,6 +41180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1366109471}
   uiPrompt: {fileID: 1830190187}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -40835,6 +41392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1372763276}
   uiPrompt: {fileID: 1914713730}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -41637,6 +42195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1397067514}
   uiPrompt: {fileID: 1825432151}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -42603,6 +43162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1455386379}
   uiPrompt: {fileID: 1336990738}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -43246,6 +43806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1465742177}
   uiPrompt: {fileID: 861834955}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -44719,6 +45280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1525957622}
   uiPrompt: {fileID: 856458736}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -44846,6 +45408,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1530290417}
   uiPrompt: {fileID: 416785611}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -45398,6 +45961,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1565314781}
   uiPrompt: {fileID: 1652203599}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -46237,6 +46801,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1616710965}
   uiPrompt: {fileID: 1381399936}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -47202,6 +47767,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1650867470}
   uiPrompt: {fileID: 1515972255}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -47581,6 +48147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1656511820}
   uiPrompt: {fileID: 836864039}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -48721,6 +49288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1699527351}
   uiPrompt: {fileID: 207356879}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -51880,6 +52448,90 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1812281980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1812281982}
+  - component: {fileID: 1812281981}
+  m_Layer: 0
+  m_Name: bridge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1812281981
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812281980}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: a8415d6be4b9edc4eba79fbd36650f96, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.6, y: 2.7}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1812281982
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812281980}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 32.95, y: 85.07, z: 0}
+  m_LocalScale: {x: 1.6608299, y: 1.6608299, z: 1.6608299}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1814208761
 GameObject:
   m_ObjectHideFlags: 0
@@ -52278,6 +52930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1821904662}
   uiPrompt: {fileID: 200457719}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -53161,6 +53814,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1842840826}
   uiPrompt: {fileID: 1863296275}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -53525,6 +54179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1859779476}
   uiPrompt: {fileID: 315535402}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -53940,6 +54595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1861300408}
   uiPrompt: {fileID: 1860744908}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -54489,6 +55145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1878053154}
   uiPrompt: {fileID: 112387165}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -54768,6 +55425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1887431675}
   uiPrompt: {fileID: 1311324632}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -54895,6 +55553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1889110101}
   uiPrompt: {fileID: 530930901}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -55190,6 +55849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1900667205}
   uiPrompt: {fileID: 1775166406}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -55669,6 +56329,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 0}
   uiPrompt: {fileID: 1816176677}
+  secondUiPrompt: {fileID: 0}
   interactKey: 0
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -56920,6 +57581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 1975077008}
   uiPrompt: {fileID: 223204002}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -57700,6 +58362,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 2006079935}
   uiPrompt: {fileID: 1092317489}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -58778,6 +59441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 2061059229}
   uiPrompt: {fileID: 93599903}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}
@@ -59241,6 +59905,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: {fileID: 2091943828}
   uiPrompt: {fileID: 948044524}
+  secondUiPrompt: {fileID: 0}
   interactKey: 101
   withinRange: 0
   dialogueRunner: {fileID: 0}

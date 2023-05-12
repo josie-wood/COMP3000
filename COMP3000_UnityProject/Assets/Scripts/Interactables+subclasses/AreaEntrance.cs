@@ -14,11 +14,11 @@ public class AreaEntrance : Interactable
         areaAccessible = yarnManager.canExploreWoods;
         if(!areaAccessible)
         {
-            closedSign.enabled = true;
+            if (closedSign) { closedSign.enabled = true; }
         }
         else
         {
-			closedSign.enabled = false;
+            if (closedSign) { closedSign.enabled = false; }
 		}
 	}
 
